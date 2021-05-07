@@ -7,6 +7,6 @@
     <title>Git Baik deh</title>
 </head>
 <body>
-    <p>test bisa gak ya</p>
+    <p>test bisa njerrr</p>
 </body>
 </html>
