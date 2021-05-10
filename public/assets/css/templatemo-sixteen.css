@@ -306,7 +306,11 @@ header .navbar {
 	line-height: 26px;
 	font-family: 'FontAwesome';
 }
-
+#search {
+    top: -8px;
+    position: relative;
+    left: -10px;
+}
 
 
 /* Banner Style */
