@@ -149,7 +149,6 @@
                     <li><i class="fa fa-star"></i></li>
                     <li><i class="fa fa-star"></i></li>
                     <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
                   </ul>
                   <span>Reviews (32)</span>
                 </div>
@@ -159,7 +158,7 @@
         </div>
       </div>
 
-      <div class="best-features">
+      <!-- <div class="best-features">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -188,10 +187,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
 
-      <div class="call-to-action">
+      <!-- <div class="call-to-action">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -209,6 +208,6 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     @endsection
     

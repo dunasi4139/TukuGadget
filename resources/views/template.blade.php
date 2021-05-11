@@ -54,22 +54,19 @@ https://templatemo.com/tm-546-sixteen-clothing
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Products</a>
+                            <a class="nav-link" href="#">Jual Barang</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
                         <li class="nav-item" id="login-bt">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="login">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Register</a>
@@ -88,10 +85,7 @@ https://templatemo.com/tm-546-sixteen-clothing
             <div class="row">
                 <div class="col-md-12">
                     <div class="inner-content">
-                        <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
-
-                            - Design: <a rel="nofollow noopener" href="https://templatemo.com"
-                                target="_blank">TemplateMo</a></p>
+                        <p>Copyright &copy; 2021 Tuku Gadget, Ltd.</p>
                     </div>
                 </div>
             </div>
