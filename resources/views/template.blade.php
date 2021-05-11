@@ -66,8 +66,8 @@ https://templatemo.com/tm-546-sixteen-clothing
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
-                        <li class="{{ Request::path()=='login'?'nav-item active' : 'nav-item' }}" id="login-bt">
-                            <a class="nav-link" href="login">Login</a>
+                        <li class="{{ Request::path()=='indexLogin'?'nav-item active' : 'nav-item' }}" id="login-bt">
+                            <a class="nav-link" href="/indexLogin">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Register</a>

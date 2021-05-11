@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\otentikasiController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,10 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard');
 });
-
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/indexLogin', [otentikasiController::class, 'indexLogin'])->name('indexLogin');
+Route::post('/login', [otentikasiController::class, 'login'])->name('login');
 
 Route::post('/dashboard-login', function () {
     return view('dashboard-login');
