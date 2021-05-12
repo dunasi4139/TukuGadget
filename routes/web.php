@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\otentikasiController;
-
+use Illuminate\Routing\RouteGroup;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,11 +16,15 @@ use App\Http\Controllers\otentikasiController;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    if (session('berhasil_Login')) {
+        return view('afterlogin.dashboard');
+    } else {
+        return view('beforelogin.dashboard');
+    }
 });
 Route::get('/indexLogin', [otentikasiController::class, 'indexLogin'])->name('indexLogin');
 Route::post('/login', [otentikasiController::class, 'login'])->name('login');
+Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
 
-Route::post('/dashboard-login', function () {
-    return view('dashboard-login');
-});
+// Route::group(['middleware'=>'cekLogin'],function(){
+// });

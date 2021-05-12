@@ -55,7 +55,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="{{ Request::path()=='/'?'nav-item active' : 'nav-item' }}">
+                        <li class="{{ Request::path() == '/' ? 'nav-item active' : 'nav-item' }}">
                             <a class="nav-link" href="#">Home
                                 <span class="sr-only">(current)</span>
                             </a>
@@ -66,7 +66,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
-                        <li class="{{ Request::path()=='indexLogin'?'nav-item active' : 'nav-item' }}" id="login-bt">
+                        <li class="{{ Request::path() == 'indexLogin' ? 'nav-item active' : 'nav-item' }}" id="login-bt">
                             <a class="nav-link" href="/indexLogin">Login</a>
                         </li>
                         <li class="nav-item">

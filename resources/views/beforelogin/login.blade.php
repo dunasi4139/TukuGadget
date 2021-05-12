@@ -1,6 +1,5 @@
-@extends('template')
+@extends('beforelogin.template')
 @section('content')
-
     <body class="login-page">
         <div class="container-fluid">
             <h1>Login</h1>
