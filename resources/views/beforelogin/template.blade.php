@@ -28,8 +28,6 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/loginstyle.css">
 
-</head>
-
 <body>
 
     <!-- ***** Preloader Start ***** -->
