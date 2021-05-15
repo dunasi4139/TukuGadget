@@ -8,10 +8,13 @@
      
 } */
 
-
 .login-page{
     background-image: url(https://i.pinimg.com/originals/8e/6a/3a/8e6a3abf307278f940c02072d8ae46e8.jpg);
-}   
+}
+
+.register-page{
+    background-image: url(https://i.pinimg.com/originals/8e/6a/3a/8e6a3abf307278f940c02072d8ae46e8.jpg);
+}
 
 .container-fluid{
     position: absolute;
@@ -19,7 +22,7 @@
     top: 50%;
     transform: translate(-50%,-50%);
     padding: 20px 25px;
-    width: 300px;
+    width: 500px;
 
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgb(255, 255, 255);
