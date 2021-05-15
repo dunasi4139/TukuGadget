@@ -19,7 +19,7 @@ Route::get('/', function () {
     if (session('berhasil_Login')) {
         return view('afterlogin.dashboard');
     } else {
-        return view('beforelogin.dashboard');
+        return view('beforelogin.register');
     }
 });
 Route::get('/indexLogin', [otentikasiController::class, 'indexLogin'])->name('indexLogin');
