@@ -25,6 +25,9 @@ Route::get('/', function () {
 Route::get('/indexLogin', [otentikasiController::class, 'indexLogin'])->name('indexLogin');
 Route::post('/login', [otentikasiController::class, 'login'])->name('login');
 Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
+Route::get('/register', function () {
+    return view('register');
+});
 
 // Route::group(['middleware'=>'cekLogin'],function(){
 // });
