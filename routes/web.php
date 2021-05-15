@@ -19,15 +19,11 @@ Route::get('/', function () {
     if (session('berhasil_Login')) {
         return view('afterlogin.dashboard');
     } else {
-        return view('beforelogin.register');
+        return view('beforelogin.dashboard');
     }
 });
-Route::get('/indexLogin', [otentikasiController::class, 'indexLogin'])->name('indexLogin');
-Route::post('/login', [otentikasiController::class, 'login'])->name('login');
+Route::get('indexLogin', [otentikasiController::class, 'indexLogin'])->name('indexLogin');
+Route::post('login', [otentikasiController::class, 'login'])->name('login');
+Route::get('indexRegister', [otentikasiController::class, 'indexRegister'])->name('indexRegister');
+Route::post('register', [otentikasiController::class, 'register'])->name('register');
 Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
-Route::get('/register', function () {
-    return view('register');
-});
-
-// Route::group(['middleware'=>'cekLogin'],function(){
-// });
