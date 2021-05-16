@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-class cekLogin
+class cekLoginViewA
 {
     /**
      * Handle an incoming request.
@@ -17,10 +17,7 @@ class cekLogin
     public function handle(Request $request, Closure $next)
     {
         if (session('berhasil_Login')) {
-            return view('afterlogin.dashboard');
-        } else {
-            return view('beforelogin.dashboard');
+            return $next($request);
         }
-        return $next($request);
     }
 }

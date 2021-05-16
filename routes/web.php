@@ -22,8 +22,14 @@ Route::get('/', function () {
         return view('beforelogin.dashboard');
     }
 });
+
+// Route::group(['middleware' => 'cekLoginViewB'], function(){
+
+// });
+Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
 Route::get('indexLogin', [otentikasiController::class, 'indexLogin'])->name('indexLogin');
 Route::post('login', [otentikasiController::class, 'login'])->name('login');
 Route::get('indexRegister', [otentikasiController::class, 'indexRegister'])->name('indexRegister');
 Route::post('register', [otentikasiController::class, 'register'])->name('register');
-Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
+
+
