@@ -1,0 +1,16 @@
+.btn {
+    margin-top: 5px;
+    border: 0;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    font-family: inherit;
+    background-color: inherit;
+    border-radius: 0;
+    transition: all 0.5s;
+}
+
+.dropdown-item {
+    font-weight: 500;
+    font-family: inherit;
+}
