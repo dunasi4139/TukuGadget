@@ -1,11 +1,13 @@
 @extends('beforelogin.template')
 @section('content')
 
-<body class="register-page">
+<body class="login-page">
     <div class="login-wrap">
         <div class="login-html">
             <form class="login-form" method="POST" action="{{ route('login') }}">
                 @csrf
+                <h1>Login</h1>
+                <br>
                 <div class="login-form">
                     <div class="sign-in-htm">
 
@@ -17,6 +19,7 @@
                             <label for="pass" class="label">Password</label>
                             <input id="pass" type="password" class="input" data-type="password" name="password">
                         </div>
+                        <input type="checkbox" onclick="showPassword()"><a class="show-pass">Show Password</a>
                         @if (session('message'))
                             <div class="alert alert-danger" role="alert" style="padding: 5px; font-size: 11px;">
                                 {{ session('message') }}
@@ -32,5 +35,14 @@
     </div>
     </div>
 </body>
-
+    <script>
+        function showPassword() {
+        var x = document.getElementById("pass");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
 @endsection

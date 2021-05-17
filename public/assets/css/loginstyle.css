@@ -19,67 +19,89 @@ a{color:inherit;text-decoration:none}
 	max-width:510px;
 	min-height:510px;
 	position:relative;
-	background:url(https://maxcdn.icons8.com/app/uploads/2016/03/material-1-1000x563.jpg) no-repeat center;
-	background-size: cover;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
-.login-html{
+.register-wrap{
+	width: 100%;
+	margin:auto;
+    padding-top: 25px;
+	max-width:510px;
+	min-height:750px;
+	position:relative;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html,
+.register-html{
 	width:100%;
 	height:100%;
 	position:absolute;
 	padding:90px 70px 50px 70px;
-	background:rgba(0,0,0,0.5);
+	background: #f33f3f(255, 255, 255, 0.493);
 }
 .login-html .sign-in,
-.login-form .group .check{
+.login-form .group .check,
+.register-html .sign-up,
+.register-form .group .check{
 	display:none;
 }
 .login-form .group .label,
-.login-form .group .button{
+.login-form .group .button,
+.register-form .group .label,
+.register-form .group .button{
 	text-transform:uppercase;
 }
-.login-html .tab{
+/* .login-html .tab
+.register-html .tab{
 	font-size:22px;
 	margin-right:15px;
 	padding-bottom:5px;
 	margin:0 15px 10px 0;
 	display:inline-block;
 	border-bottom:2px solid transparent;
-}
-
-.login-form .group{
+} */
+.login-form .group,
+.register-form .group{
+	margin-top: 10px;
 	margin-bottom:15px;
 }
 .login-form .group .label,
 .login-form .group .input,
-.login-form .group .button{
+.login-form .group .button,
+.register-form .group .label,
+.register-form .group .input,
+.register-form .group .button{
 	width:100%;
-	color:#fff;
+	color: white;
 	display:block;
 }
 .login-form .group .input,
-.login-form .group .button{
+.login-form .group .button,
+.register-form .group .input,
+.register-form .group .button{
 	border:none;
 	padding:15px 20px;
 	border-radius:25px;
-	background:rgba(255,255,255,.1);
+	background:rgba(255, 255, 255, 0.459);
 }
-
-.login-form .group .label{
-	color:#aaa;
+.login-form .group .label,
+.register-form .group .label{
+	color:rgb(233, 233, 233);
 	font-size:12px;
 }
-.login-form .group .button{
-	background:#1161ee;
+.login-form .group .button,
+.register-form .group .button{
+	background:#fd3535;
 }
-.login-form .group label .icon{
+/* .login-form .group label .icon,
+.register-form .group label .icon{
 	width:15px;
 	height:15px;
 	border-radius:2px;
+	border: transparent;
 	position:relative;
 	display:inline-block;
 	background:rgba(255,255,255,.1);
-}
+} */
 .foot-lnk{
 	text-align:center;
 }
