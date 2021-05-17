@@ -16,17 +16,8 @@ use Illuminate\Routing\RouteGroup;
 |
 */
 
-Route::get('/', function () {
-    if (session('berhasil_Login')) {
-        return view('afterlogin.dashboard');
-    } else {
-        return view('beforelogin.dashboard');
-    }
-});
+Route::get('/', [otentikasiController::class, 'dashboardLogin'])->name('dashboardLogin');
 
-// Route::group(['middleware' => 'cekLoginViewB'], function(){
-
-// });
 Route::get('indexLogin', [otentikasiController::class, 'indexLogin'])->name('indexLogin');
 
 Route::post('login', [otentikasiController::class, 'login'])->name('login');

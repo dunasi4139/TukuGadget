@@ -1,4 +1,4 @@
-@extends('beforelogin.template')
+@extends('afterlogin.template')
 @section('content')
 
 <body class="jualbarang-page">

@@ -8,6 +8,11 @@ class CRUD extends Controller
 {
     public function indexJualBarang()
     {
-        return view('afterlogin.jual-barang');
+        if (session('berhasil_Login')) {
+            return view('afterlogin.jual-barang');
+        } else {
+            return redirect('/indexLogin');
+        }
+
     }
 }

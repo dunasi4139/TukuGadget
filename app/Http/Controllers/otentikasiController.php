@@ -32,7 +32,7 @@ class otentikasiController extends Controller
         $data = User::where('username', $request->username)->first();
         if ($data) {
             return redirect('/indexRegister')->with('message', 'Username sudah terpakai');
-        }else{
+        } else {
             User::create([
                 'name' => $request->name,
                 'email' => $request->email,
@@ -48,5 +48,13 @@ class otentikasiController extends Controller
     {
         $request->session()->flush();
         return redirect('/');
+    }
+    public function dashboardLogin()
+    {
+        if (session('berhasil_Login')) {
+            return view('afterlogin.dashboard');
+        } else {
+            return view('beforelogin.dashboard');
+        }
     }
 }
