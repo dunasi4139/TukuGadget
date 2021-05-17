@@ -1,107 +1,156 @@
 .login-page,
-.register-page {
-	margin:0;
-	color:#edf3ff;
-	background:#c8c8c8;
-	background:url(https://i.pinimg.com/originals/8e/6a/3a/8e6a3abf307278f940c02072d8ae46e8.jpg) fixed;
-	background-size: cover;
-	font:600 16px/18px 'Open Sans',sans-serif;
+.register-page,
+.jualbarang-page {
+    margin: 0;
+    color: #edf3ff;
+    background: #c8c8c8;
+    background: url(https://i.pinimg.com/originals/8e/6a/3a/8e6a3abf307278f940c02072d8ae46e8.jpg) fixed;
+    background-size: cover;
+    font: 600 16px/18px 'Open Sans', sans-serif;
 }
-:after,:before{box-sizing:border-box}
-.clearfix:after,.clearfix:before{content:'';display:table}
-.clearfix:after{clear:both;display:block}
-a{color:inherit;text-decoration:none}
 
-.login-wrap{
-	width: 100%;
-	margin:auto;
-    padding-top: 25px;
-	max-width:510px;
-	min-height:510px;
-	position:relative;
-	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+:after,
+:before {
+    box-sizing: border-box
 }
-.register-wrap{
-	width: 100%;
-	margin:auto;
-    padding-top: 25px;
-	max-width:510px;
-	min-height:750px;
-	position:relative;
-	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table
 }
+
+.clearfix:after {
+    clear: both;
+    display: block
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.login-wrap {
+    width: 100%;
+    margin: auto;
+    padding-top: 25px;
+    max-width: 510px;
+    min-height: 510px;
+    position: relative;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+
+.register-wrap {
+    width: 100%;
+    margin: auto;
+    padding-top: 25px;
+    max-width: 510px;
+    min-height: 750px;
+    position: relative;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+
+.jualbarang-wrap {
+    width: 100%;
+    margin: auto;
+    padding-top: 25px;
+    max-width: 510px;
+    min-height: 930px;
+    position: relative;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+
 .login-html,
-.register-html{
-	width:100%;
-	height:100%;
-	position:absolute;
-	padding:90px 70px 50px 70px;
-	background: #f33f3f(255, 255, 255, 0.493);
+.register-html,
+.jualbarang-html {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 70px 50px 70px;
+    background: #f33f3f(255, 255, 255, 0.493);
 }
+
 .login-html .sign-in,
 .login-form .group .check,
 .register-html .sign-up,
-.register-form .group .check{
-	display:none;
+.register-form .group .check,
+.jualbarang-html .jual,
+.jualbarang-form .group .check {
+    display: none;
 }
+
 .login-form .group .label,
 .login-form .group .button,
 .register-form .group .label,
-.register-form .group .button{
-	text-transform:uppercase;
+.register-form .group .button,
+.jualbarang-form .group .label,
+.jualbarang-form .group .button {
+    text-transform: uppercase;
 }
-/* .login-html .tab
-.register-html .tab{
-	font-size:22px;
-	margin-right:15px;
-	padding-bottom:5px;
-	margin:0 15px 10px 0;
-	display:inline-block;
-	border-bottom:2px solid transparent;
-} */
+
+.jualbarang-form .group #alamat,
+.jualbarang-form .group #deskripsibarang {
+    border-radius: 0;
+    padding: 5px 5px;
+    text-align: justify;
+    width: 100%;
+    height: 100px;
+}
+
+.jualbarang-form .group #jenisbarang {
+    border-radius: 0;
+}
+
+.jualbarang-form .group #jenisbarang option {
+    color: black;
+}
+
 .login-form .group,
-.register-form .group{
-	margin-top: 10px;
-	margin-bottom:15px;
+.register-form .group,
+.jualbarang-form .group {
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
+
 .login-form .group .label,
 .login-form .group .input,
 .login-form .group .button,
 .register-form .group .label,
 .register-form .group .input,
-.register-form .group .button{
-	width:100%;
-	color: white;
-	display:block;
+.register-form .group .button,
+.jualbarang-form .group .label,
+.jualbarang-form .group .input,
+.jualbarang-form .group .button {
+    width: 100%;
+    color: white;
+    display: block;
 }
+
 .login-form .group .input,
 .login-form .group .button,
 .register-form .group .input,
-.register-form .group .button{
-	border:none;
-	padding:15px 20px;
-	border-radius:25px;
-	background:rgba(255, 255, 255, 0.459);
+.register-form .group .button,
+.jualbarang-form .group .input,
+.jualbarang-form .group .button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.459);
 }
+
 .login-form .group .label,
-.register-form .group .label{
-	color:rgb(233, 233, 233);
-	font-size:12px;
+.register-form .group .label,
+.jualbarang-form .group .label {
+    color: rgb(233, 233, 233);
+    font-size: 12px;
 }
+
 .login-form .group .button,
-.register-form .group .button{
-	background:#fd3535;
+.register-form .group .button,
+.jualbarang-form .group .button {
+    background: #fd3535;
 }
-/* .login-form .group label .icon,
-.register-form .group label .icon{
-	width:15px;
-	height:15px;
-	border-radius:2px;
-	border: transparent;
-	position:relative;
-	display:inline-block;
-	background:rgba(255,255,255,.1);
-} */
-.foot-lnk{
-	text-align:center;
+
+.foot-lnk {
+    text-align: center;
 }

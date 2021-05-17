@@ -9,35 +9,46 @@
                 <h1>Jual Barang</h1>
                 <br>
                 <div class="jualbarang-form">
-                    <div class="jualbarang-html">
+                    <div class="jual-htm">
 
                         <div class="group">
-                            <label for="user" class="label">NAMA BARANG</label>
-                            <input id="user" type="text" class="input" name="namabarang">
+                            <label for="namabarang" class="label">NAMA BARANG</label>
+                            <input id="namabarang" type="text" class="input" name="namabarang">
                         </div>
                         <div class="group">
                             <label for="checkbox" class="label">JENIS BARANG</label>
-                            <input id="check" type="checkbox" class="input" name="jenisbarang">
+                            <select name="jenisbarang" id="jenisbarang" class="input">
+                                <option value="komputer">Komputer</option>
+                                <option value="handphone">Handphone</option>
+                                <option value="laptop">Laptop</option>
+                                <option value="komponenPC">Komponen PC</option>
+                                <option value="elektronik">Elektronik Lainnya</option>
+                            </select>
                         </div>
                         <div class="group">
-                            <label for="user" class="label">HARGA BARANG</label>
-                            <input id="user" type="text" class="input" name="hargabarang">
+                            <label for="hargabarang" class="label">HARGA BARANG</label>
+                            <input id="hargabarang" type="text" class="input" name="hargabarang">
                         </div>
                         <div class="group">
-                            <label for="user" class="label">ALAMAT</label>
-                            <input id="user" type="textarea" class="input" name="alamatbarang">
+                            <label for="alamat" class="label">ALAMAT</label>
+                            <textarea name="alamatbarang" id="alamat" class="input" cols="30" rows="10"></textarea>
                         </div>
                         <div class="group">
-                            <label for="user" class="label">DESKRIPSI BARANG</label>
-                            <input id="user" type="textarea" class="input" name="deskripsibarang">
+                            <label for="deskripsibarang" class="label">DESKRIPSI BARANG</label>
+                            <textarea name="deskripsibarang" id="deskripsibarang" class="input" cols="30" rows="10"></textarea>
                         </div>
                         <div class="group">
-                            <input type="submit" class="button" value="jualbarang">
+                            <label for="fotobarang" class="label">Foto Barang</label>
+                            <input type="file" name="fotobarang" id="fotobarang" class="input">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="jual">
                         </div>
 
                     </div>
+                </div>
             </form>
         </div>
     </div>
-    </div>
+</body>
 @endsection
