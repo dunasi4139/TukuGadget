@@ -90,18 +90,19 @@ a {
 
 .jualbarang-form .group #alamat,
 .jualbarang-form .group #deskripsibarang {
-    border-radius: 0;
-    padding: 5px 5px;
+    border-radius: 3px;
+    padding: 10px 10px;
     text-align: justify;
     width: 100%;
     height: 100px;
 }
 
 .jualbarang-form .group #jenisbarang {
-    border-radius: 0;
+    border-radius: 3px;
 }
 
 .jualbarang-form .group #jenisbarang option {
+	background-attachment: rgba(255, 255, 255, 0.603);
     color: black;
 }
 

@@ -18,11 +18,11 @@
                         <div class="group">
                             <label for="checkbox" class="label">JENIS BARANG</label>
                             <select name="jenisbarang" id="jenisbarang" class="input">
-                                <option value="komputer">Komputer</option>
-                                <option value="handphone">Handphone</option>
-                                <option value="laptop">Laptop</option>
-                                <option value="komponenPC">Komponen PC</option>
-                                <option value="elektronik">Elektronik Lainnya</option>
+                                <option class="input" value="komputer">Komputer</option>
+                                <option class="input" value="handphone">Handphone</option>
+                                <option class="input" value="laptop">Laptop</option>
+                                <option class="input" value="komponenPC">Komponen PC</option>
+                                <option class="input" value="elektronik">Elektronik Lainnya</option>
                             </select>
                         </div>
                         <div class="group">
