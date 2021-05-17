@@ -27,6 +27,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/loginstyle.css">
+    <link rel="stylesheet" href="assets/css/jualbarangstyle.css">
 
 <body>
 
@@ -58,8 +59,8 @@ https://templatemo.com/tm-546-sixteen-clothing
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Jual Barang</a>
+                        <li class="{{ Request::path() == 'indexJualBarang' ? 'nav-item active' : 'nav-item' }}">
+                            <a class="nav-link" href="/indexJualBarang">Jual Barang</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>

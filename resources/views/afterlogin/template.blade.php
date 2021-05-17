@@ -28,6 +28,8 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/loginstyle.css">
     <link rel="stylesheet" href="assets/css/dropdown.css">
+    <link rel="stylesheet" href="assets/css/jualbarangstyle.css">
+    
     
 
 </head>

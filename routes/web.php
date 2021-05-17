@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\otentikasiController;
+use App\Http\Controllers\CRUD;
 use Illuminate\Routing\RouteGroup;
 
 /*
@@ -33,6 +34,8 @@ Route::post('login', [otentikasiController::class, 'login'])->name('login');
 Route::get('indexRegister', [otentikasiController::class, 'indexRegister'])->name('indexRegister');
 
 Route::post('register', [otentikasiController::class, 'register'])->name('register');
+
+Route::get('indexJualBarang', [CRUD::class, 'indexJualBarang'])->name('indexJualBarang');
 
 Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
 
