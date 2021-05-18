@@ -49,12 +49,5 @@ class otentikasiController extends Controller
         $request->session()->flush();
         return redirect('/');
     }
-    public function dashboardLogin()
-    {
-        if (session('berhasil_Login')) {
-            return view('afterlogin.dashboard');
-        } else {
-            return view('beforelogin.dashboard');
-        }
-    }
+
 }

@@ -3,19 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Models\barang;
 
 class CRUD extends Controller
 {
-    public function indexJualBarang()
-    {
-        if (session('berhasil_Login')) {
-            return view('afterlogin.jual-barang');
-        } else {
-            return redirect('/indexLogin');
-        }
 
-    }
     public function __construct()
     {
         $this->barang = new barang();
@@ -33,4 +26,24 @@ class CRUD extends Controller
             return view('beforelogin.dashboard',$data);
         }
     }
+
+    public function jualBarang(Request $request)
+    {
+            $file = $request->file('fotobarang');
+            $filenameWithExt = $file->getClientOriginalName();
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $file->getClientOriginalExtension();
+            $filenameSimpan = $filename.'.'.$extension;
+            barang::create([
+                'nama' => $request->namabarang,
+                'jenis' => $request->jenisbarang,
+                'harga' => $request->hargabarang,
+                'alamat' => $request->alamatbarang,
+                'deskripsi' => $request->deskripsibarang,
+                'gambar'=>$filenameSimpan,
+            ]);
+            $file->move(public_path().'/assets/images/barang',$filenameSimpan);
+            return redirect('/');
+    }
+
 }

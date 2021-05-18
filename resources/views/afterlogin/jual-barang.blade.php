@@ -4,7 +4,7 @@
 <body class="jualbarang-page">
     <div class="jualbarang-wrap">
         <div class="jualbarang-html">
-            <form class="jualbarang-form" method="POST" action="">
+            <form class="jualbarang-form" method="post" action="{{ route('jualBarang') }}" enctype="multipart/form-data">
                 @csrf
                 <h1>Jual Barang</h1>
                 <br>

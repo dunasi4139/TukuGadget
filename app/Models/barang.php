@@ -9,6 +9,16 @@ use Illuminate\Support\Facades\DB;
 class barang extends Model
 {
     use HasFactory;
+    protected $table = "barangs";
+    protected $primaryKey = "id";
+    protected $fillable = [
+        'nama' ,
+        'jenis',
+        'harga',
+        'alamat',
+        'deskripsi',
+        'gambar',
+    ];
     public function allData(){
         return DB::table('barangs')->get();
     }

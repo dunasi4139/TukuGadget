@@ -27,7 +27,9 @@ Route::get('indexRegister', [otentikasiController::class, 'indexRegister'])->nam
 
 Route::post('register', [otentikasiController::class, 'register'])->name('register');
 
-Route::get('indexJualBarang', [CRUD::class, 'indexJualBarang'])->name('indexJualBarang');
+Route::get('indexJualBarang', [ViewController::class, 'indexJualBarang'])->name('indexJualBarang');
+
+Route::post('jualBarang', [CRUD::class, 'jualBarang'])->name('jualBarang');
 
 Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
 

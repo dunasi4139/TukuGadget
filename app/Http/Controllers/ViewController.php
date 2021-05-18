@@ -14,4 +14,13 @@ class ViewController extends Controller
             return view('beforelogin.about-us');
         }
     }
+    public function indexJualBarang()
+    {
+        if (session('berhasil_Login')) {
+            return view('afterlogin.jual-barang');
+        } else {
+            return redirect('/indexLogin');
+        }
+
+    }
 }
