@@ -14,13 +14,6 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-    <!--
-
-TemplateMo 546 Sixteen Clothing
-
-https://templatemo.com/tm-546-sixteen-clothing
-
--->
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -29,6 +22,8 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="assets/css/loginstyle.css">
     <link rel="stylesheet" href="assets/css/jualbarangstyle.css">
 
+    <script src="https://kit.fontawesome.com/df75941921.js" crossorigin="anonymous"></script>
+</head>
 <body>
 
     <!-- ***** Preloader Start ***** -->
