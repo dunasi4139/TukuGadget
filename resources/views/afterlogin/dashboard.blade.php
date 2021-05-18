@@ -60,7 +60,7 @@
                             <a href="#">
                                 <h4>{{ $item->nama }}</h4>
                             </a>
-                            <h6>{{ $item->harga }}</h6>
+                            <h6>Rp. {{ number_format($item->harga) }}</h6>
                             <p>{{ $item->deskripsi }}</p>
                         </div>
                     </div>
