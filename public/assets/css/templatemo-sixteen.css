@@ -233,6 +233,9 @@ header .navbar {
 .background-header .navbar-nav a.nav-link {
 	color: #1e1e1e!important;
 }
+.background-header .navbar-nav .nav-item .btn{
+	color: #1e1e1e!important;
+}
 .background-header .navbar-nav .nav-link:hover,
 .background-header .navbar-nav .active>.nav-link,
 .background-header .navbar-nav .nav-link.active,
@@ -483,6 +486,8 @@ header .navbar {
 	font-weight: 500;
 }
 
+/* Best Product */
+
 /* Footer */
 
 footer {
@@ -669,6 +674,10 @@ footer .inner-content p a {
 		border-bottom: none;
 	}
 	.navbar .navbar-nav a.nav-link {
+		padding: 15px 0px;
+		color: #1e1e1e!important;
+	}
+	.navbar .navbar-nav .nav-item .btn{
 		padding: 15px 0px;
 		color: #1e1e1e!important;
 	}
