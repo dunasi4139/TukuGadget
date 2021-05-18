@@ -17,7 +17,7 @@ use Illuminate\Routing\RouteGroup;
 |
 */
 
-Route::get('/', [otentikasiController::class, 'dashboardLogin'])->name('dashboardLogin');
+Route::get('/', [CRUD::class, 'dashboardLogin'])->name('dashboardLogin');
 
 Route::get('indexLogin', [otentikasiController::class, 'indexLogin'])->name('indexLogin');
 
@@ -32,3 +32,4 @@ Route::get('indexJualBarang', [CRUD::class, 'indexJualBarang'])->name('indexJual
 Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
 
 Route::get('indexAbout', [ViewController::class, 'indexAbout'])->name('indexAbout');
+
