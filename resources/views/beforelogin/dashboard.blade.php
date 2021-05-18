@@ -31,9 +31,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <form>
+                    <form method="GET" action="{{ route('search') }}">
                         <div class="input-group">
-                            <input type="search" name="searchbar" id="searchbar" class="form-control" placeholder="Search Product..">
+                            <input type="search" name="search" id="searchbar" class="form-control" placeholder="Search Product..">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-link"><i class="fas fa-search"></i></button>
                             </div>

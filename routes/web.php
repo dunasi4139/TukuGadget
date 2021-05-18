@@ -35,3 +35,5 @@ Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
 
 Route::get('indexAbout', [ViewController::class, 'indexAbout'])->name('indexAbout');
 
+Route::get('search', [CRUD::class, 'search'])->name('search');
+
