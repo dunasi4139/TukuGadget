@@ -25,7 +25,7 @@ class CRUD extends Controller
     public function dashboardLogin()
     {
         $data = [
-            'produk'=>$this->barang->allData()
+            'produk'=>$this->barang->latestProduct()
         ];
         if (session('berhasil_Login')) {
             return view('afterlogin.dashboard',$data);

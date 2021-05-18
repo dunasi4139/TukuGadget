@@ -12,4 +12,7 @@ class barang extends Model
     public function allData(){
         return DB::table('barangs')->get();
     }
+    public function latestProduct(){
+        return barang::orderBy('created_at','DESC')->get()->take(6);
+    }
 }
