@@ -1,4 +1,5 @@
 @extends('beforelogin.template')
+@section('title','Tuku Gadget')
 @section('content')
     <!-- Page Content -->
     <!-- Banner Starts Here -->

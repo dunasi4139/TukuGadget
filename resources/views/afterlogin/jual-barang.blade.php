@@ -1,4 +1,5 @@
 @extends('afterlogin.template')
+@section('title','Jual Barang - Tuku Gadget')
 @section('content')
 
 <body class="jualbarang-page">

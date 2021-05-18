@@ -1,4 +1,5 @@
 @extends('beforelogin.template')
+@section('title','Register - Tuku Gadget')
 @section('content')
 <body class="register-page">
     <div class="register-wrap">

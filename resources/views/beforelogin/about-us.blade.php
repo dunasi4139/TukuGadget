@@ -1,4 +1,5 @@
 @extends('beforelogin.template')
+@section('title','About us - Tuku Gadget')
 @section('content')
 <body>
     <div class="container1">
