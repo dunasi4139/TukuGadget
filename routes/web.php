@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\otentikasiController;
 use App\Http\Controllers\CRUD;
+use App\Http\Controllers\ViewController;
 use Illuminate\Routing\RouteGroup;
 
 /*
@@ -30,4 +31,4 @@ Route::get('indexJualBarang', [CRUD::class, 'indexJualBarang'])->name('indexJual
 
 Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
 
-
+Route::get('indexAbout', [ViewController::class, 'indexAbout'])->name('indexAbout');

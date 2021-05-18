@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <title>Tuku Gadget</title>
 
@@ -29,8 +28,9 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="assets/css/loginstyle.css">
     <link rel="stylesheet" href="assets/css/dropdown.css">
     <link rel="stylesheet" href="assets/css/jualbarangstyle.css">
-    
-    
+    <link rel="stylesheet" href="assets/css/aboutstyle.css">
+
+
 
 </head>
 
@@ -53,8 +53,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <a class="navbar-brand" href="/">
                     <h2>Tuku <em>Gadget</em></h2>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -67,8 +66,8 @@ https://templatemo.com/tm-546-sixteen-clothing
                         <li class="{{ Request::path() == 'indexJualBarang' ? 'nav-item active' : 'nav-item' }}">
                             <a class="nav-link" href="/indexJualBarang">Jual Barang</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                        <li class="{{ Request::path() == 'indexAbout' ? 'nav-item active' : 'nav-item' }}">
+                            <a class="nav-link" href="/indexAbout">About Us</a>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
@@ -125,7 +124,6 @@ https://templatemo.com/tm-546-sixteen-clothing
                 t.style.color = '#fff';
             }
         }
-
     </script>
 
 
