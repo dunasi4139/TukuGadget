@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\otentikasiController;
 use App\Http\Controllers\CRUD;
 use App\Http\Controllers\ViewController;
+use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Routing\RouteGroup;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,23 +19,23 @@ use Illuminate\Routing\RouteGroup;
 |
 */
 
-Route::get('/', [CRUD::class, 'dashboardLogin'])->name('dashboardLogin');
 
-Route::get('indexLogin', [otentikasiController::class, 'indexLogin'])->name('indexLogin');
 
+Route::group(['middleware' => 'auth'], function(){
+    Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
+    Route::get('jualBarang', [ViewController::class, 'indexJualBarang'])->name('jualBarang');
+    Route::post('jualBarang', [CRUD::class, 'jualBarang'])->name('jualBarang');
+ });
+    Route::get('/', [CRUD::class, 'dashboard'])->name('dashboard');
+
+
+Route::get('login', [otentikasiController::class, 'indexLogin'])->name('login');
 Route::post('login', [otentikasiController::class, 'login'])->name('login');
 
-Route::get('indexRegister', [otentikasiController::class, 'indexRegister'])->name('indexRegister');
+Route::get('register', [otentikasiController::class, 'indexRegister'])->name('register');
 
 Route::post('register', [otentikasiController::class, 'register'])->name('register');
 
-Route::get('indexJualBarang', [ViewController::class, 'indexJualBarang'])->name('indexJualBarang');
-
-Route::post('jualBarang', [CRUD::class, 'jualBarang'])->name('jualBarang');
-
-Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
-
-Route::get('indexAbout', [ViewController::class, 'indexAbout'])->name('indexAbout');
+Route::get('about', [ViewController::class, 'indexAbout'])->name('about');
 
 Route::get('search', [CRUD::class, 'search'])->name('search');
-

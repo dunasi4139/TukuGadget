@@ -5,23 +5,29 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class otentikasiController extends Controller
 {
-    public function indexLogin()
-    {
+    public function indexLogin(){
         return view('beforelogin.login');
     }
-    public function login(Request $request)
-    {
-        $data = User::where('username', $request->username)->first();
-        if ($data) {
-            if (Hash::check($request->password, $data->password)) {
-                session(['berhasil_Login' => true]);
-                return redirect('/');
-            }
+
+    public function login(Request $request){
+        $request->validate([
+            'username' => 'required|string',
+            'password' => 'required',
+        ]);
+
+        $credentials = $request->only('username', 'password');
+
+        if (Auth::attempt($credentials)){
+            $request->session()->regenerate();
+            
+            return redirect('/');
         }
-        return redirect('/indexLogin')->with('message', 'Username dan/atau Password Salah');
+        
+        return back()->with('wrong', 'Username dan/atau password salah');
     }
     public function indexRegister()
     {
@@ -29,10 +35,29 @@ class otentikasiController extends Controller
     }
     public function register(Request $request)
     {
-        $data = User::where('username', $request->username)->first();
-        if ($data) {
-            return redirect('/indexRegister')->with('message', 'Username sudah terpakai');
-        } else {
+        $request->validate([
+            'name' => 'required|string|min:3|max:50',
+            'email' => 'required',
+            'username' => 'required|string|min:3|max:20',
+            'noHP' => 'required|numeric',
+            'password' => 'required|string|min:8|max:50'
+        ],[
+            'name.required'=> 'Masukkan Nama',
+            'email.required'=> 'Masukkan Email',
+            'username.required'=> 'Masukkan Username',
+            'noHP.required'=> 'Masukkan NO HP',
+            'password.required'=> 'Masukkan Password'
+        ]);
+
+        $occupied = False;
+
+        if (User::where('username', '=', $request['username'])->exists()) {
+            $occupied = True;
+        }
+
+        if ($occupied){
+            return back()->with('occupied', 'Username sudah terpakai');
+        }  else {
             User::create([
                 'name' => $request->name,
                 'email' => $request->email,
@@ -46,7 +71,8 @@ class otentikasiController extends Controller
 
     public function logout(Request $request)
     {
-        $request->session()->flush();
+        Auth::logout();  
+        $request->session()->invalidate();
         return redirect('/');
     }
 

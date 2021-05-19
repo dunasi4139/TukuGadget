@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ViewController extends Controller
 {
     public function indexAbout()
     {
-        if (session('berhasil_Login')) {
+        if (Auth::check()) {
             return view('afterlogin.about-us');
         } else {
             return view('beforelogin.about-us');
@@ -16,7 +17,7 @@ class ViewController extends Controller
     }
     public function indexJualBarang()
     {
-        if (session('berhasil_Login')) {
+        if (Auth::check()) {
             return view('afterlogin.jual-barang');
         } else {
             return redirect('/indexLogin');

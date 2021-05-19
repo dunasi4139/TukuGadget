@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Auth;
 use App\Models\barang;
 
 class CRUD extends Controller
@@ -15,12 +16,12 @@ class CRUD extends Controller
     }
 
 
-    public function dashboardLogin()
+    public function dashboard()
     {
         $data = [
             'produk' => $this->barang->latestProduct()
         ];
-        if (session('berhasil_Login')) {
+        if (Auth::check()) {
             return view('afterlogin.dashboard', $data);
         } else {
             return view('beforelogin.dashboard', $data);
@@ -49,7 +50,7 @@ class CRUD extends Controller
     public function search(Request $request)
     {
 
-        if (session('berhasil_Login')) {
+        if (Auth::check()) {
             if ($request->has('search')) {
                 $dataCari = barang::where('nama', 'LIKE', '%' . $request->search . '%')->get();
                 return view('afterlogin.product', ['dataCari' => $dataCari]);

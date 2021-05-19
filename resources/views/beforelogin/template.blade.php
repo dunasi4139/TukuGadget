@@ -55,17 +55,17 @@
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="{{ Request::path() == 'indexJualBarang' ? 'nav-item active' : 'nav-item' }}">
-                            <a class="nav-link" href="/indexJualBarang">Jual Barang</a>
+                        <li class="{{ Request::path() == 'jualBarang' ? 'nav-item active' : 'nav-item' }}">
+                            <a class="nav-link" href="/jualBarang">Jual Barang</a>
                         </li>
-                        <li class="{{ Request::path() == 'indexAbout' ? 'nav-item active' : 'nav-item' }}">
-                            <a class="nav-link" href="/indexAbout">About Us</a>
+                        <li class="{{ Request::path() == 'about' ? 'nav-item active' : 'nav-item' }}">
+                            <a class="nav-link" href="/about">About Us</a>
                         </li>
-                        <li class="{{ Request::path() == 'indexLogin' ? 'nav-item active' : 'nav-item' }}" id="login-bt">
-                            <a class="nav-link" href="/indexLogin">Login</a>
+                        <li class="{{ Request::path() == 'login' ? 'nav-item active' : 'nav-item' }}" id="login-bt">
+                            <a class="nav-link" href="/login">Login</a>
                         </li>
-                        <li class="{{ Request::path() == 'indexRegister' ? 'nav-item active' : 'nav-item' }}">
-                            <a class="nav-link" href="/indexRegister">Register</a>
+                        <li class="{{ Request::path() == 'register' ? 'nav-item active' : 'nav-item' }}">
+                            <a class="nav-link" href="/register">Register</a>
                         </li>
                     </ul>
                 </div>
