@@ -22,6 +22,14 @@ class ViewController extends Controller
         } else {
             return redirect('/indexLogin');
         }
+    }
 
+    public function indexProfile()
+    {
+        if (Auth::check()) {
+            return view('afterlogin.profile');
+        } else {
+            return redirect('/indexLogin');
+        }
     }
 }
