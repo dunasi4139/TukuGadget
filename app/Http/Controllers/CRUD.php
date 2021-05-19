@@ -28,6 +28,18 @@ class CRUD extends Controller
         }
     }
 
+    public function product()
+    {
+        $data = [
+            'produk' => $this->barang->allData()
+        ];
+        if (Auth::check()) {
+            return view('afterlogin.product', $data);
+        } else {
+            return view('beforelogin.product', $data);
+        }
+    }
+
     public function jualBarang(Request $request)
     {
         $file = $request->file('fotobarang');

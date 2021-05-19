@@ -420,6 +420,20 @@ header .navbar {
 	color: #f33f3f;
 }
 
+/* Search Bar Product */
+
+.search-bar-product{
+	padding-top: 130px;
+}
+
+.search-bar-product .form-control{
+	height: 50px;
+}
+
+.search-bar-product .btn{
+	color: #f33f3f;
+}
+
 /* Latest Produtcs */
 
 .latest-products {
@@ -446,6 +460,7 @@ header .navbar {
 }
 
 .product-item img {
+	height: 300px;
 	width: 100%;
 	overflow: hidden;
 }

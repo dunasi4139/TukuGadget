@@ -59,8 +59,11 @@
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
+                        <li class="{{ Request::path() == 'product' ? 'nav-item active' : 'nav-item' }}">
+                            <a class="nav-link" href="/product">Product</a>
+                        </li>
                         <li class="{{ Request::path() == 'jualBarang' ? 'nav-item active' : 'nav-item' }}">
-                            <a class="nav-link" href="/indexJualBarang">Jual Barang</a>
+                            <a class="nav-link" href="/indexJualBarang">Sell Item</a>
                         </li>
                         <li class="{{ Request::path() == 'about' ? 'nav-item active' : 'nav-item' }}">
                             <a class="nav-link" href="/about">About Us</a>

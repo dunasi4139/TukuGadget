@@ -39,3 +39,5 @@ Route::post('register', [otentikasiController::class, 'register'])->name('regist
 Route::get('about', [ViewController::class, 'indexAbout'])->name('about');
 
 Route::get('search', [CRUD::class, 'search'])->name('search');
+
+Route::get('product', [CRUD::class, 'product'])->name('product');
