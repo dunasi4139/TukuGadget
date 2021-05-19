@@ -32,4 +32,13 @@ class ViewController extends Controller
             return redirect('/indexLogin');
         }
     }
+
+    public function showDetail()
+    {
+        if (Auth::check()) {
+            return view('afterlogin.detail');
+        } else {
+            return redirect('beforelogin.detail');
+        }
+    }
 }

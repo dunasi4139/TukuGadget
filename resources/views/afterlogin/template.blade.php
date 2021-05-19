@@ -69,7 +69,7 @@
                             <a class="nav-link" href="/about">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <div class="dropdown">
+                            <div class="dropdown {{ Request::path() == 'profile' ? 'nav-item active' : 'nav-item' }}">
                                 <button class="btn btn--secondary dropdowntoggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Account
                                     <i class="fa fa-caret-down"></i>

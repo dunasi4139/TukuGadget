@@ -50,7 +50,7 @@
                     <div class="product-item">
                         <a href="#"><img src="{{ url ('assets/images/barang/'.$item->gambar)}}" alt=""></a>
                         <div class="down-content">
-                            <a href="#">
+                            <a href="{{ route('detail') }}">
                                 <h4>{{ $item->nama }}</h4>
                             </a>
                             <h6>Rp. {{ number_format($item->harga) }}</h6>
