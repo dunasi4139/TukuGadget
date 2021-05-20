@@ -63,7 +63,7 @@
                             <a class="nav-link" href="/product">Product</a>
                         </li>
                         <li class="{{ Request::path() == 'jualBarang' ? 'nav-item active' : 'nav-item' }}">
-                            <a class="nav-link" href="/indexJualBarang">Sell Item</a>
+                            <a class="nav-link" href="/jualBarang">Sell Item</a>
                         </li>
                         <li class="{{ Request::path() == 'about' ? 'nav-item active' : 'nav-item' }}">
                             <a class="nav-link" href="/about">About Us</a>

@@ -19,7 +19,7 @@
                     <div class="card-title mb-4">
                         <div class="d-flex justify-content-start">
                             <div class="image-container">
-                                <img src="http://placehold.it/150x150" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+                                <img src="{{ url ('assets/images/user/user-kosong.png')}}"  id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
                                 <div class="middle">
                                     <input type="button" class="btn btn-secondary" id="btnChangePicture" value="Change" />
                                     <input type="file" style="display: none;" id="profilePicture" name="file" />
@@ -52,7 +52,7 @@
                                             <label style="font-weight:bold;">Full Name</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                            Duwi Purnama Sidik
+                                            {{Auth::user()->name}}
                                         </div>
                                     </div>
                                     <hr />
@@ -61,7 +61,7 @@
                                             <label style="font-weight:bold;">E-Mail</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                            duwi4139@student.ub.ac.id
+                                            {{Auth::user()->email}}
                                         </div>
                                     </div>
                                     <hr />
@@ -71,18 +71,7 @@
                                             <label style="font-weight:bold;">Username</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                            duwik1234
-                                            <button onclick="passwordFunction()" id="password-button">Show Password</button>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    
-                                    <div class="row password-profile-row">
-                                        <div class="col-sm-3 col-md-2 col-5">
-                                            <label style="font-weight:bold;">Password</label>
-                                        </div>
-                                        <div class="col-md-8 col-6">
-                                            duwik1234
+                                            {{Auth::user()->username}}
                                         </div>
                                     </div>
                                     <hr />
@@ -91,7 +80,7 @@
                                             <label style="font-weight:bold;">Phone Number</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                            012345666769
+                                            {{Auth::user()->noHP}}
                                         </div>
                                     </div>
                                     <hr />
