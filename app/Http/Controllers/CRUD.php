@@ -97,5 +97,23 @@ class CRUD extends Controller
             }
         }
     }
-
+    public function updateProfil(Request $request)
+    {
+        $user_id = Auth::user_id()->id;
+        $user = User::findOrFail($user_id);
+        if ($request->hasFile('file')) {
+            $destinasi = '/assets/images/user/' . $user->foto;
+            if (File::exists($destinasi)) {
+                File::delete();
+            }
+            $file = $request->file('file');
+            $filenameWithExt = $file->getClientOriginalName();
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $file->getClientOriginalExtension();
+            $filenameSimpan = $filename . '.' . $extension;
+            $file->move(public_path() . '/assets/images/user', $filenameSimpan);
+            $user->update();
+            return redirect('')->back();
+        }
+    }
 }
