@@ -61,7 +61,7 @@ class CRUD extends Controller
             'namabarang.required' => 'Silahkan masukkan nama barang',
             'hargabarang.required' => 'Silahkan masukkan harga barang',
             'alamatbarang.required' => 'Silahkan masukkan alamat barang',
-            'deskripsibarang.required' => 'Silahkan nasukkan deskripsi barang',
+            'deskripsibarang.required' => 'Silahkan masukkan deskripsi barang',
             'fotobarang.required' => 'Silahkan masukkan foto'
         ]);
         $user = Auth::user();
