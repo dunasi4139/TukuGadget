@@ -30,7 +30,7 @@ class ViewController extends Controller
         if (Auth::check()) {
             return view('afterlogin.detail');
         } else {
-            return redirect('beforelogin.detail');
+            return view('beforelogin.detail');
         }
     }
 }
