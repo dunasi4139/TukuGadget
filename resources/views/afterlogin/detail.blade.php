@@ -20,17 +20,10 @@
                         <div class="d-flex justify-content-start">
                             <div class="image-container">
                                 <img src="http://placehold.it/150x150" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
-                                <div class="middle">
-                                    <input type="button" class="btn btn-secondary" id="btnChangePicture" value="Change" />
-                                    <input type="file" style="display: none;" id="profilePicture" name="file" />
-                                </div>
                             </div>
                             <div class="userData ml-3">
                                 <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold"><a href="javascript:void(0);">Some Name</a></h2>
                                 <h6 class="d-block"><a href="javascript:void(0)">6667</a> Items</h6>
-                            </div>
-                            <div class="ml-auto">
-                                <input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Discard Changes" />
                             </div>
                         </div>
                     </div>
@@ -61,6 +54,25 @@
                                             0000000000000000000
                                         </div>
                                     </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-2 col-5">
+                                            <label style="font-weight:bold;">Email</label>
+                                        </div>
+                                        <div class="col-md-8 col-6">
+                                            0000000000000000000
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-2 col-5">
+                                            <label style="font-weight:bold;">Alamat</label>
+                                        </div>
+                                        <div class="col-md-8 col-6">
+                                            0000000000000000000
+                                        </div>
+                                    </div>
+                                    <hr />
                                 </div>
                             </div>
                         </div>

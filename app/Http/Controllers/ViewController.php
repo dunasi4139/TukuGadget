@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class ViewController extends Controller
@@ -31,7 +30,7 @@ class ViewController extends Controller
         if (Auth::check()) {
             return view('afterlogin.detail');
         } else {
-            return redirect('beforelogin.detail');
+            return view('beforelogin.detail');
         }
     }
 }
