@@ -8,7 +8,7 @@
 @section('content')
 
 <link rel="stylesheet" href="assets/css/profilestyle.css">
-<script src="public\assets\js\profile.js"></script>
+<script src="assets\js\profile.js"></script>
 <script src="assets\vendor\jquery\jquery.min.js"></script>
 
 <div class="container" id="profile-container">
