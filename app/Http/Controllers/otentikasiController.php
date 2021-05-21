@@ -27,7 +27,7 @@ class otentikasiController extends Controller
             return redirect('/');
         }
         
-        return back()->with('wrong', 'Username dan/atau password salah');
+        return back()->with('wrong', 'Username dan atau password salah');
     }
     public function indexRegister()
     {
@@ -42,11 +42,11 @@ class otentikasiController extends Controller
             'noHP' => 'required|numeric',
             'password' => 'required|string|min:8|max:50'
         ],[
-            'name.required'=> 'Masukkan Nama',
-            'email.required'=> 'Masukkan Email',
-            'username.required'=> 'Masukkan Username',
-            'noHP.required'=> 'Masukkan NO HP',
-            'password.required'=> 'Masukkan Password'
+            'name.required'=> 'Silahkan masukkan nama',
+            'email.required'=> 'Silahkan masukkan email',
+            'username.required'=> 'Silahkan masukkan username',
+            'noHP.required'=> 'Silahkan masukkan nomor telepon',
+            'password.required'=> 'Silahkan masukkan password'
         ]);
 
         $occupied = False;

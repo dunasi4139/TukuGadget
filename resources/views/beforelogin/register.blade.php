@@ -18,21 +18,21 @@
                                 <label for="name" class="label">Name</label>
                                 <input id="name" type="text" value="{{ old('name') }}" name="name" class="input ">
                                 @error('name')
-                                    <div class="pesan">{{ $message }}</div>
+                                    <div class="pesan"><i class="fas fa-exclamation-circle"></i> {{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="group">
                                 <label for="email" class="label">Email</label>
                                 <input id="email" type="email" value="{{ old('email') }}" class="input" name="email">
                                 @error('email')
-                                    <div class="pesan">{{ $message }}</div>
+                                    <div class="pesan"><i class="fas fa-exclamation-circle"></i> {{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="group">
                                 <label for="user" class="label">Username</label>
                                 <input id="user" type="text" class="input" name="username">
                                 @error('username')
-                                    <div class="pesan">{{ $message }}</div>
+                                    <div class="pesan"><i class="fas fa-exclamation-circle"></i> {{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="group">
@@ -40,7 +40,7 @@
                                 <input id="nohp" type="number" value="{{ old('noHP') }}"
                                     class="input @error('noHP') is-invalid @enderror" name="noHP">
                                 @error('noHP')
-                                    <div class="pesan">{{ $message }}</div>
+                                    <div class="pesan"><i class="fas fa-exclamation-circle"></i> {{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="group">
@@ -48,7 +48,7 @@
                                 <input id="pass" type="password" class="input @error('password') is-invalid @enderror"
                                     data-type="password" name="password">
                                 @error('password')
-                                    <div class="pesan">{{ $message }}</div>
+                                    <div class="pesan"><i class="fas fa-exclamation-circle"></i> {{ $message }}</div>
                                 @enderror
                             </div>
                             <input type="checkbox" onclick="showPassword()"><a class="show-pass">Show Password</a>

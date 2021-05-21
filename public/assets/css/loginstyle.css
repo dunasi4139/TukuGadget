@@ -45,7 +45,7 @@ a {
     margin: auto;
     padding-top: 25px;
     max-width: 510px;
-    min-height: 750px;
+    min-height: 850px;
     position: relative;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
 }
@@ -150,6 +150,12 @@ a {
 .register-form .group .button,
 .jualbarang-form .group .button {
     background: #fd3535;
+}
+
+.pesan {
+    font-size: small;
+    color: yellow;
+    padding-top: 10px;
 }
 
 .foot-lnk {
