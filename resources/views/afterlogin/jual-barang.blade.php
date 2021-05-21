@@ -16,7 +16,7 @@
                             <label for="namabarang" class="label">NAMA BARANG</label>
                             <input id="namabarang" type="text" class="input" name="namabarang">
                             @error('namabarang')
-                            <div class="pesan">{{ $message }}</div>
+                            <div class="pesan"><i class="fas fa-exclamation-circle"></i> {{ $message }}</div>
                         @enderror
                         </div>
                         <div class="group">
@@ -33,28 +33,28 @@
                             <label for="hargabarang" class="label">HARGA BARANG</label>
                             <input id="hargabarang" type="text" class="input" name="hargabarang">
                             @error('hargabarang')
-                            <div class="pesan">{{ $message }}</div>
+                            <div class="pesan"><i class="fas fa-exclamation-circle"></i> {{ $message }}</div>
                         @enderror
                         </div>
                         <div class="group">
                             <label for="alamat" class="label">ALAMAT</label>
                             <textarea name="alamatbarang" id="alamat" class="input" cols="30" rows="10"></textarea>
                             @error('alamatbarang')
-                            <div class="pesan">{{ $message }}</div>
+                            <div class="pesan"><i class="fas fa-exclamation-circle"></i> {{ $message }}</div>
                         @enderror
                         </div>
                         <div class="group">
                             <label for="deskripsibarang" class="label">DESKRIPSI BARANG</label>
                             <textarea name="deskripsibarang" id="deskripsibarang" class="input" cols="30" rows="10"></textarea>
                             @error('deskripsibarang')
-                            <div class="pesan">{{ $message }}</div>
+                            <div class="pesan"><i class="fas fa-exclamation-circle"></i> {{ $message }}</div>
                         @enderror
                         </div>
                         <div class="group">
                             <label for="fotobarang" class="label">Foto Barang</label>
                             <input type="file" name="fotobarang" id="fotobarang" class="input">
                             @error('fotobarang')
-                            <div class="pesan">{{ $message }}</div>
+                            <div class="pesan"><i class="fas fa-exclamation-circle"></i> {{ $message }}</div>
                         @enderror
                         </div>
                         <div class="group">

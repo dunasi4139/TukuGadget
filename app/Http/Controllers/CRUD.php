@@ -60,11 +60,11 @@ class CRUD extends Controller
             'deskripsibarang' => 'required',
             'fotobarang' => 'required|image|mimes:jpeg,png,jpg,gif,svg|'
         ], [
-            'namabarang.required' => 'Masukkan Nama Barang',
-            'hargabarang.required' => 'Masukkan Harga Barang',
-            'alamatbarang.required' => 'Masukkan Alamat Barang',
-            'deskripsibarang.required' => 'Masukkan Deskripsi Barang',
-            'fotobarang.required' => 'Masukkan Foto'
+            'namabarang.required' => 'Silahkan masukkan nama barang',
+            'hargabarang.required' => 'Silahkan masukkan harga barang',
+            'alamatbarang.required' => 'Silahkan masukkan alamat barang',
+            'deskripsibarang.required' => 'Silahkan nasukkan deskripsi barang',
+            'fotobarang.required' => 'Silahkan masukkan foto'
         ]);
         $user = Auth::user();
         $file = $request->file('fotobarang');
