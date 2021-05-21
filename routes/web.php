@@ -25,6 +25,8 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('logout', [otentikasiController::class, 'logout'])->name('logout');
     Route::get('jualBarang', [ViewController::class, 'indexJualBarang'])->name('jualBarang');
     Route::post('jualBarang', [CRUD::class, 'jualBarang'])->name('jualBarang');
+    Route::get('profile', [ViewController::class, 'indexProfile'])->name('profile');
+    Route::post('profile', [CRUD::class, 'updateProfile'])->name('profile');
  });
     Route::get('/', [CRUD::class, 'dashboard'])->name('dashboard');
 
@@ -42,6 +44,6 @@ Route::get('search', [CRUD::class, 'search'])->name('search');
 
 Route::get('product', [CRUD::class, 'product'])->name('product');
 
-Route::get('profile', [ViewController::class, 'indexProfile'])->name('profile');
+
 
 Route::get('productDetail', [ViewController::class, 'showDetail'])->name('detail');

@@ -18,13 +18,24 @@
                 <div class="card-body">
                     <div class="card-title mb-4">
                         <div class="d-flex justify-content-start">
+                            <form action="{{ route('profile') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
                             <div class="image-container">
-                                <img src="{{ url ('assets/images/user/user-kosong.png')}}"  id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+                                @if(Auth::user()->foto=='')
+                                <img src="{{ url ('assets/images/user/user-kosong.png')}}" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+                                @else
+                                <img src="{{ url ('assets/images/user/'.Auth::user()->foto)}}" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+                                @endif
+
                                 <div class="middle">
-                                    <input type="button" class="btn btn-secondary" id="btnChangePicture" value="Change" />
-                                    <input type="file" style="display: none;" id="profilePicture" name="file" />
+                                    <input type="file" style="display: none;" id="profilePicture" name="foto" />
+                             <input type="button" class="btn btn-secondary" id="btnChangePicture" value="Change" />
+
+
                                 </div>
                             </div>
+                            <input type="submit" class="" id="" value="Submit" />
+                        </form>
                             <div class="userData ml-3">
                                 <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold"><a href="javascript:void(0);">Some Name</a></h2>
                                 <h6 class="d-block"><a href="javascript:void(0)">6667</a> Items</h6>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\DB;
 use App\Models\barang;
 use App\Models\User;
 
@@ -97,23 +98,24 @@ class CRUD extends Controller
             }
         }
     }
-    public function updateProfil(Request $request)
+    public function updateProfile(Request $request)
     {
-        $user_id = Auth::user_id()->id;
-        $user = User::findOrFail($user_id);
-        if ($request->hasFile('file')) {
-            $destinasi = '/assets/images/user/' . $user->foto;
+        $user = Auth::user();
+        $foto = Auth::user()->foto;
+        if ($request->hasFile('foto')) {
+            $destinasi = '/assets/images/user/'.$foto;
             if (File::exists($destinasi)) {
                 File::delete();
             }
-            $file = $request->file('file');
+            $file = $request->file('foto');
             $filenameWithExt = $file->getClientOriginalName();
             $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
             $extension = $file->getClientOriginalExtension();
             $filenameSimpan = $filename . '.' . $extension;
             $file->move(public_path() . '/assets/images/user', $filenameSimpan);
-            $user->update();
-            return redirect('')->back();
+            $user->foto = $filenameSimpan;
+            $user->save();
+            return redirect('/profile');
         }
     }
 }

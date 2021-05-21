@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $imgSrc = $('#imgProfile').attr('src');
     function readURL(input) {
 
@@ -36,6 +37,7 @@ $(document).ready(function () {
         $('#imgProfile').attr('src', $imgSrc);
         $('#profilePicture').val('');
         }
+
     });
 });
 
