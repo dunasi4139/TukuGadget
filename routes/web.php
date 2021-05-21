@@ -4,9 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\otentikasiController;
 use App\Http\Controllers\CRUD;
 use App\Http\Controllers\ViewController;
-use Illuminate\Routing\Route as RoutingRoute;
-use Illuminate\Routing\RouteGroup;
-use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
