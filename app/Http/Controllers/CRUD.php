@@ -100,13 +100,19 @@ class CRUD extends Controller
     }
     public function updateProfile(Request $request)
     {
+        $request->validate([
+            'foto' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
+        ], [
+            'foto.required'=>redirect('/profile')
+        ]);
         $user = Auth::user();
         $foto = Auth::user()->foto;
-        if ($request->hasFile('foto')) {
-            $destinasi = '/assets/images/user/'.$foto;
-            if (File::exists($destinasi)) {
-                File::delete();
+        if ($foto) {
+            $reqfile = 'assets/images/user/'.$foto;
+            if (Storage::url($reqfile)) {
+                File::delete($reqfile);
             }
+            
             $file = $request->file('foto');
             $filenameWithExt = $file->getClientOriginalName();
             $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
