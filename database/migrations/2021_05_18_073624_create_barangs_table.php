@@ -21,6 +21,7 @@ class CreateBarangsTable extends Migration
             $table->string('alamat');
             $table->string('deskripsi');
             $table->string('gambar');
+            $table->string('penjual');
             $table->timestamps();
         });
     }

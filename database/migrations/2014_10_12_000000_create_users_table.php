@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('noHP');
             $table->string('password');
             $table->string('foto');
+            $table->integer('jumlah');
             $table->timestamps();
         });
     }

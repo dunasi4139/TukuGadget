@@ -37,8 +37,8 @@
                             <input type="submit" class="" id="" value="Submit" />
                         </form>
                             <div class="userData ml-3">
-                                <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold"><a href="javascript:void(0);">Some Name</a></h2>
-                                <h6 class="d-block"><a href="javascript:void(0)">6667</a> Items</h6>
+                                <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold"> {{Auth::user()->name}}</h2>
+                                <h6 class="d-block">{{Auth::user()->jumlah}} Barang</h6>
                             </div>
                             <div class="ml-auto">
                                 <input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Discard Changes" />
@@ -96,20 +96,24 @@
                                     </div>
                                     <hr />
                                 </div>
+                                @if(isset ($produk))
+                                @foreach ($produk as $item)
                                 <div class="tab-pane fade" id="connectedServices" role="tabpanel" aria-labelledby="ConnectedServices-tab">
                                     <div class="col-md-4">
                                         <div class="product-item">
-                                            <a href="#"><img src="" alt=""></a>
+                                            <a href="#"><img src="{{ url ('assets/images/barang/'.$item->gambar)}}" alt=""></a>
                                             <div class="down-content">
                                                 <a href="#">
-                                                    <h4>Nama Item</h4>
+                                                    <h4>{{ $item->nama }}</h4>
                                                 </a>
-                                                <h6>Rp. harga item</h6>
-                                                <p>Deskripsi Item</p>
+                                                <h6>Rp. {{ number_format($item->harga) }}</h6>
+                                                <p>{{ $item->deskripsi }}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                @endforeach
+                                @endif
                             </div>
                         </div>
                     </div>

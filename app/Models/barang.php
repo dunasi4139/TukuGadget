@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class barang extends Model
 {
@@ -18,11 +19,15 @@ class barang extends Model
         'alamat',
         'deskripsi',
         'gambar',
+        'penjual'
     ];
     public function allData(){
         return DB::table('barangs')->get();
     }
     public function latestProduct(){
         return barang::orderBy('created_at','DESC')->get()->take(6);
+    }
+    public function daftarJual(){
+        return DB::table('barangs')->where('penjual', Auth::user()->username)->get();
     }
 }

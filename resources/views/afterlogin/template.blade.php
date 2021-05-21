@@ -59,7 +59,7 @@
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="{{ Request::path() == 'product' ? 'nav-item active' : 'nav-item' }}">
+                        <li class="{{ Request::path() == 'product' || Request::path() == 'search' ? 'nav-item active' : 'nav-item' }}">
                             <a class="nav-link" href="/product">Product</a>
                         </li>
                         <li class="{{ Request::path() == 'jualBarang' ? 'nav-item active' : 'nav-item' }}">

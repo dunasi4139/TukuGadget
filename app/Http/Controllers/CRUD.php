@@ -31,6 +31,14 @@ class CRUD extends Controller
         }
     }
 
+    public function indexProfile()
+    {
+        $data = [
+            'produk' => $this->barang->daftarJual()
+        ];
+        return view('afterlogin.profile', $data);
+    }
+
     public function product()
     {
         $data = [
@@ -58,6 +66,7 @@ class CRUD extends Controller
             'deskripsibarang.required' => 'Masukkan Deskripsi Barang',
             'fotobarang.required' => 'Masukkan Foto'
         ]);
+        $user = Auth::user();
         $file = $request->file('fotobarang');
         $filenameWithExt = $file->getClientOriginalName();
         $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
@@ -70,7 +79,11 @@ class CRUD extends Controller
             'alamat' => $request->alamatbarang,
             'deskripsi' => $request->deskripsibarang,
             'gambar' => $filenameSimpan,
+            'penjual' => $user->username,
         ]);
+        $nambah = $user->jumlah +1;
+        $user->jumlah = $nambah;
+        $user->save();
         $file->move(public_path() . '/assets/images/barang', $filenameSimpan);
         return redirect('/');
     }

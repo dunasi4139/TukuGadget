@@ -24,14 +24,7 @@ class ViewController extends Controller
         }
     }
 
-    public function indexProfile()
-    {
-        if (Auth::check()) {
-            return view('afterlogin.profile');
-        } else {
-            return redirect('/indexLogin');
-        }
-    }
+
 
     public function showDetail()
     {
