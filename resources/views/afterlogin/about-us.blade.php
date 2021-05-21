@@ -1,126 +1,279 @@
 @extends('afterlogin.template')
 @section('title','About us - Tuku Gadget')
 @section('content')
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-<style>
-    .container1 {
-        background-color: #FD7EC2;
-        height: 550px;
-    }
-
-    .container1-left {
-        width: 50%;
-        padding: 60px;
-        padding-top: 120px;
-        color: #FFF2F9;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        float: left;
-    }
-
-    .container1-right {
-        width: 50%;
-        float: left;
-        padding-top: 40px;
-    }
-
-    .container2 {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding-top: 50px;
-        padding-left: 300px;
-        padding-right: 300px;
-    }
-
-    .container3 {
-        padding-left: 20%;
-        padding-top: 30px;
-        height: 400px;
-    }
-
-    .container3-left {
-        width: 25%;
-        height: 400px;
-        float: left;
-    }
-
-    .container3-center {
-        width: 25%;
-        height: 400px;
-        float: left;
-    }
-
-    .container3-right {
-        width: 25%;
-        height: 400px;
-        float: left;
-    }
-
-    .container4 {
-        height: 200px;
-        background-color: #FD7EC2;
-    }
-</style>
 
 <body>
-    <div class="container1">
-        <div class="container1-left">
-            <center>
-                <h1 style="font-weight: bold;">Para Content Creator</h1>
-                <p style="margin-top:30px">CoCo atau Content Creator Community merupakan sebuah platform berbentuk Website yang dibuat untuk menghubungkan para content creator untuk berdiskusi dengan content creator lainnya.</p>
-            </center>
-        </div>
-        <div class="container1-right">
-            <img src="img/pc.png" alt="pc">
-        </div>
-    </div>
-    <div style="height: 20px; background-color:#EF2A82"></div>
-
-    <div class="container2">
-        <center>
-            <h2 style="font-weight: bold; color: #EF2A82; margin-bottom:30px">Main Features</h2>
-            <p>CoCo menyediakan fitur-fitur berdiskusi dan berkolaborasi dengan content creator maupun pengguna lain, serta membuat ruang obrolan privasi.</p>
-        </center>
-    </div>
-
-    <div class="container3">
-        <div class="container3-left">
-            <center>
-                <img src="img/diskusi.png" style="width: 200px;" alt="">
-                <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 40px">DISKUSI</h3>
-            </center>
-        </div>
-        <div class="container3-center">
-            <center>
-                <img src="img/kolaborasi.png" style="width: 200px;" alt="">
-                <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 40px">KOLABORASI</h3>
-            </center>
-        </div>
-        <div class="container3-right">
-            <center>
-                <img src="img/chat.png" style="width: 250px; height: 200px" alt="">
-                <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 40px">CHAT</h3>
-            </center>
+    <div class="page-heading about-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h4>about us</h4>
+                        <h2>our company</h2>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div style="height: 20px; background-color:#EF2A82"></div>
 
-    <div class="container4">
-
+    <div class="best-features about-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Our Background</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-image">
+                        <img src="assets/images/feature-image.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="left-content">
+                        <h4>Who we are &amp; What we do?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <div class="team-members">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Our Team Members</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <div class="thumb-container">
+                            <img src="assets/images/team_01.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <ul class="social-icons">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>Johnny William</h4>
+                            <span>CO-Founder</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <div class="thumb-container">
+                            <img src="assets/images/team_02.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <ul class="social-icons">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>Karry Pitcher</h4>
+                            <span>Product Expert</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <div class="thumb-container">
+                            <img src="assets/images/team_03.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <ul class="social-icons">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>Michael Soft</h4>
+                            <span>Chief Marketing</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <div class="thumb-container">
+                            <img src="assets/images/team_04.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <ul class="social-icons">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>Mary Cool</h4>
+                            <span>Product Specialist</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <div class="thumb-container">
+                            <img src="assets/images/team_05.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <ul class="social-icons">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>George Walker</h4>
+                            <span>Product Photographer</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <div class="thumb-container">
+                            <img src="assets/images/team_06.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="hover-content">
+                                    <ul class="social-icons">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>Kate Town</h4>
+                            <span>General Manager</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <div class="icon">
+                            <i class="fa fa-gear"></i>
+                        </div>
+                        <div class="down-content">
+                            <h4>Product Management</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat.</p>
+                            <a href="#" class="filled-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <div class="icon">
+                            <i class="fa fa-gear"></i>
+                        </div>
+                        <div class="down-content">
+                            <h4>Customer Relations</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat.</p>
+                            <a href="#" class="filled-button">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <div class="icon">
+                            <i class="fa fa-gear"></i>
+                        </div>
+                        <div class="down-content">
+                            <h4>Global Collection</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat.</p>
+                            <a href="#" class="filled-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="happy-clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Happy Partners</h2>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="owl-clients owl-carousel">
+                        <div class="client-item">
+                            <img src="assets/images/client-01.png" alt="1">
+                        </div>
+
+                        <div class="client-item">
+                            <img src="assets/images/client-01.png" alt="2">
+                        </div>
+
+                        <div class="client-item">
+                            <img src="assets/images/client-01.png" alt="3">
+                        </div>
+
+                        <div class="client-item">
+                            <img src="assets/images/client-01.png" alt="4">
+                        </div>
+
+                        <div class="client-item">
+                            <img src="assets/images/client-01.png" alt="5">
+                        </div>
+
+                        <div class="client-item">
+                            <img src="assets/images/client-01.png" alt="6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
