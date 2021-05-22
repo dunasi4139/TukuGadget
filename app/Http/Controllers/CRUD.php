@@ -91,7 +91,7 @@ class CRUD extends Controller
 
         if (Auth::check()) {
             if ($request->has('search')) {
-                $dataCari = barang::where('nama', 'LIKE', '%' . $request->search . '%')->get();
+                $dataCari = barang::where('nama', 'LIKE', '%' . $request->search . '%')->simplePaginate(6);
                 return view('afterlogin.product', ['dataCari' => $dataCari]);
             } else if (url('/search')) {
                 return view('afterlogin.product');

@@ -42,6 +42,7 @@
                         </div>
                     </div>
                 </div>
+                {{ $dataCari->links() }}
                 @endforeach
 
                 @else
@@ -60,8 +61,20 @@
                     </div>
                 </div>
                 @endforeach
+                
+
                 @endif
             </div>
+            
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    @if(isset ($dataCari))
+                  <li>{{ $dataCari->links() }}</li>
+                  @else 
+                  <li>{{ $produk->links() }}</li>
+                  @endif
+                </ul>
+              </nav>
         </div>
     </div>
 

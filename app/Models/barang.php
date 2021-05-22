@@ -22,7 +22,7 @@ class barang extends Model
         'penjual'
     ];
     public function allData(){
-        return DB::table('barangs')->get();
+        return barang::simplePaginate(6);
     }
     public function latestProduct(){
         return barang::orderBy('created_at','DESC')->get()->take(6);
