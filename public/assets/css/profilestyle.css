@@ -1,5 +1,6 @@
 body {
-    background: url(https://i.pinimg.com/originals/8e/6a/3a/8e6a3abf307278f940c02072d8ae46e8.jpg) fixed;
+    background-image: url("/assets/images/cover.jpeg");
+    background-attachment: fixed;
     background-size: cover; 
 }
 

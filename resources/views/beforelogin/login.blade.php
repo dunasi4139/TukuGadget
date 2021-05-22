@@ -21,7 +21,7 @@
                                 <input id="pass" type="password" class="input" data-type="password" name="password">
                             </div>
                             <input type="checkbox" onclick="showPassword()"><a class="show-pass">Show Password</a>
-                            <div class="notif">
+                            <div class="pesan">
                                 @include('beforelogin.flash-message')
                             </div>
                             <div class="group">

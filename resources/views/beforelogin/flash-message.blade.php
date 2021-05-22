@@ -6,7 +6,7 @@
 @if ($message = Session::get('occupied'))
 <tr>
     <td class="flash">
-        <strong>{{ $message }}</strong>
+    <i class="fas fa-exclamation-circle"></i> <strong>{{ $message }}</strong>
     </td>
 </tr>
 @endif
@@ -14,7 +14,7 @@
 @if ($message = Session::get('wrong'))
 <tr>
     <td class="flash">
-        <strong>{{ $message }}</strong>
+    <i class="fas fa-exclamation-circle"></i> <strong>{{ $message }}</strong>
     </td>
 </tr>
 @endif

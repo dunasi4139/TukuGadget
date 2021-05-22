@@ -22,12 +22,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading">
+                        <br>
                         <h2>Our Background</h2>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="right-image">
-                        <img src="assets/images/feature-image.jpg" alt="">
+                        <img src="assets/images/LogoTukuGadget.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">

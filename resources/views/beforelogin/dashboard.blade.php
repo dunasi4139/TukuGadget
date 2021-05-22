@@ -49,7 +49,7 @@
                             <a href="{{ route('detail') }}">
                                 <h4>{{ $item->nama }}</h4>
                             </a>
-                            <h6>Rp. {{ number_format($item->harga) }}</h6>
+                            <strong>Rp. {{ number_format($item->harga) }}</strong>
                             <p>{{ $item->deskripsi }}</p>
                         </div>
                     </div>

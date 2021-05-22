@@ -93,11 +93,11 @@ a.filled-button:hover {
 }
 
 .about-heading {
-	background-image: url(../images/about-heading.jpg);
+	background-image: url(../images/backaboutus.jpg);
 }
 
 .about-heading .text-content .company-name {
-	color:black;
+	color:white;
 }
 
 .client-item img{

@@ -6,8 +6,14 @@
     <div class="page-heading about-heading header-text">
         <div class="container">
             <div class="row">
+                <div class="col-md-6">
+                    <div class="image">
+                        <img src="assets/images/.jpg" alt="">
+                    </div>
+                </div>
                 <div class="col-md-12">
                     <div class="text-content">
+                        <img src="assets/images/.jpg" alt="">
                         <h4>About Us</h4>
                         <h2 class="company-name">Tuku Gadget</h2>
                     </div>
@@ -22,12 +28,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading">
+                        <br>
                         <h2>Our Background</h2>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="right-image">
-                        <img src="assets/images/feature-image.jpg" alt="">
+                    <div class="image">
+                        <img src="assets/images/LogoTukuGadget.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">

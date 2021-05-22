@@ -4,7 +4,8 @@
     margin: 0;
     color: #edf3ff;
     background: #c8c8c8;
-    background: url(https://i.pinimg.com/originals/8e/6a/3a/8e6a3abf307278f940c02072d8ae46e8.jpg) fixed;
+    background-image: url("/assets/images/cover.jpeg");
+    background-attachment: fixed;
     background-size: cover;
     font: 600 16px/18px 'Open Sans', sans-serif;
 }
@@ -33,31 +34,37 @@ a {
 .login-wrap {
     width: 100%;
     margin: auto;
-    padding-top: 25px;
+    margin-bottom: 100px;
+    top: 100px;
     max-width: 510px;
     min-height: 510px;
     position: relative;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+    background-color: #232323;
 }
 
 .register-wrap {
     width: 100%;
     margin: auto;
-    padding-top: 25px;
+    margin-bottom: 100px;
+    top: 100px;
     max-width: 510px;
     min-height: 850px;
     position: relative;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+    background-color: #232323;
 }
 
 .jualbarang-wrap {
     width: 100%;
     margin: auto;
-    padding-top: 25px;
+    margin-bottom: 100px;
+    top: 100px;
     max-width: 510px;
-    min-height: 1050px;
+    min-height: 1020px;
     position: relative;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+    background-color: #232323;
 }
 
 .login-html,
