@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use App\Models\barang;
+use App\Models\User;
 
 class CRUD extends Controller
 {
@@ -78,6 +80,7 @@ class CRUD extends Controller
             'deskripsi' => $request->deskripsibarang,
             'gambar' => $filenameSimpan,
             'penjual' => $user->username,
+            'user_id' =>$user->id,
         ]);
         $nambah = $user->jumlah +1;
         $user->jumlah = $nambah;
@@ -100,7 +103,7 @@ class CRUD extends Controller
             }
         } else {
             if ($request->has('search')) {
-                $dataCari = barang::where('nama', 'LIKE', '%' . $request->search . '%')->get();
+                $dataCari = barang::where('nama', 'LIKE', '%' . $request->search . '%')->simplePaginate(6);
                 return view('beforelogin.product', ['dataCari' => $dataCari]);
             } else if (url('/search')) {
                 return view('beforelogin.product');
@@ -133,6 +136,28 @@ class CRUD extends Controller
             $user->foto = $filenameSimpan;
             $user->save();
             return redirect('/profile');
+        }
+    }
+    
+
+
+    public function showDetail($id)
+    {
+        $data = DB::table('users')
+        ->join('barangs','users.id','barangs.user_id')
+        ->select('users.name', 'users.noHP')
+        ->groupBy('users.name', 'users.noHP')
+        ->first();
+        $detail = [
+            'produk' => $this->barang->detailP($id),
+        ];
+        $orang = [
+            'user' => $data,
+        ];
+        if (Auth::check()) {
+            return view('afterlogin.detail',['produk' => $detail]);
+        } else {
+            return view('beforelogin.detail',['produk' => $detail], ['user' => $orang]);
         }
     }
 }

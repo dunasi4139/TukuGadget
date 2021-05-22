@@ -11,6 +11,9 @@
 <script src="public\assets\js\profile.js"></script>
 <script src="assets\vendor\jquery\jquery.min.js"></script>
 
+
+    
+@foreach ($produk as $item)
 <div class="container" id="profile-container">
     <div class="row">
         <div class="col-12">
@@ -19,11 +22,10 @@
                     <div class="card-title mb-4">
                         <div class="d-flex justify-content-start">
                             <div class="image-container">
-                                <img src="http://placehold.it/150x150" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+                                <img src="{{ url ('assets/images/barang/'.$item->gambar)}}" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
                             </div>
                             <div class="userData ml-3">
-                                <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold"><a href="javascript:void(0);">Some Name</a></h2>
-                                <h6 class="d-block"><a href="javascript:void(0)">6667</a> Items</h6>
+                                <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold">{{$item->nama}}</h2>
                             </div>
                         </div>
                     </div>
@@ -41,26 +43,28 @@
                                 <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
                                     <div class="row">
                                         <div class="col-md-8 col-6">
-                                            Deskripsi Barang BOSS
+                                            {{$item->deskripsi}}
+
                                         </div>
                                     </div>
                                 </div>
+                                @foreach ($user as $u)
                                 <div class="tab-pane fade" id="connectedServices" role="tabpanel" aria-labelledby="ConnectedServices-tab">
                                     <div class="row">
                                         <div class="col-sm-3 col-md-2 col-5">
                                             <label style="font-weight:bold;">Nomor Hp</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                            0000000000000000000
+                                            {{$u->noHP}}
                                         </div>
                                     </div>
                                     <hr />
                                     <div class="row">
                                         <div class="col-sm-3 col-md-2 col-5">
-                                            <label style="font-weight:bold;">Email</label>
+                                            <label style="font-weight:bold;">Nama Penjual</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                            0000000000000000000
+                                            {{$u->name}}
                                         </div>
                                     </div>
                                     <hr />
@@ -69,11 +73,12 @@
                                             <label style="font-weight:bold;">Alamat</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                            0000000000000000000
+                                            {{$item->alamat}}
                                         </div>
                                     </div>
                                     <hr />
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -82,4 +87,5 @@
         </div>
     </div>
 </div>
+@endforeach
 @endsection

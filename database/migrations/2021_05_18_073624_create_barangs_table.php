@@ -22,6 +22,7 @@ class CreateBarangsTable extends Migration
             $table->string('deskripsi');
             $table->string('gambar');
             $table->string('penjual');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }
