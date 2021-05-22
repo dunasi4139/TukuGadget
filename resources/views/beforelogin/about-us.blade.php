@@ -77,7 +77,7 @@
                 <div class="col-md-4">
                     <div class="team-member">
                         <div class="thumb-container">
-                            <img src="assets/images/members/Iwang.jpeg" alt="">
+                            <img src="assets/images/members/Iwang.jpg" alt="">
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">
@@ -99,7 +99,7 @@
                 <div class="col-md-4">
                     <div class="team-member">
                         <div class="thumb-container">
-                            <img src="assets/images/members/Toby.jpeg" alt="">
+                            <img src="assets/images/members/Toby.png" alt="">
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">
