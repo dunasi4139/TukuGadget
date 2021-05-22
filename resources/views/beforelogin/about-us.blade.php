@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-content">
-                        <h4>about us</h4>
+                        <h4>About Us</h4>
                         <h2 class="company-name">Tuku Gadget</h2>
                     </div>
                 </div>
@@ -37,12 +37,6 @@
                             <br><br>Tuku Gadget was created because of the Covid-19 Pandemic making it easier to shop for electronic products. Tuku Gadget is the final project result of the Brawijaya University Web Programming course.
                         </p>
                         <br>
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -68,7 +62,7 @@
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                        <li><a href="https://www.instagram.com/dunasi_/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -87,10 +81,10 @@
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                        <li><a href="https://www.facebook.com/iwang.pratama.92"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/pengennps5"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/iwang-pratama-370669207/"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.instagram.com/pratamaiwang/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -109,10 +103,10 @@
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/toby.fuady"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/toby_fuady"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                        <li><a href="https://www.instagram.com/toby.fuady/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -131,10 +125,10 @@
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                        <li><a href="https://www.facebook.com/IrzaPradana05"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/Irzactlyours"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/andikairzapradana/"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.instagram.com/irzapradana/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -153,10 +147,10 @@
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/xiuxiulsa"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/elsaagrianic"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                        <li><a href="https://www.instagram.com/elsaagrianic/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -178,7 +172,7 @@
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                        <li><a href="https://www.instagram.com/cariad_chi/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
