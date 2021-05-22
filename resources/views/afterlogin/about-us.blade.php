@@ -8,8 +8,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-content">
-                        <h4>about us</h4>
-                        <h2>our company</h2>
+                        <h4>About Us</h4>
+                        <h2 class="company-name">Tuku Gadget</h2>
                     </div>
                 </div>
             </div>
@@ -33,13 +33,10 @@
                 <div class="col-md-6">
                     <div class="left-content">
                         <h4>Who we are &amp; What we do?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                        </ul>
+                        <p>Tuku Gadget is a website-based service to assist individuals/groups/ organizations in advertising their electronic products. We also help someone in finding the desired electronic item.
+                            <br><br>Tuku Gadget was created because of the Covid-19 Pandemic making it easier to shop for electronic products. Tuku Gadget is the final project result of the Brawijaya University Web Programming course.
+                        </p>
+                        <br>
                     </div>
                 </div>
             </div>
@@ -58,183 +55,138 @@
                 <div class="col-md-4">
                     <div class="team-member">
                         <div class="thumb-container">
-                            <img src="assets/images/team_01.jpg" alt="">
+                            <img src="assets/images/members/Duwi.jpg" alt="">
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                        <li><a href="https://www.instagram.com/dunasi_/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="down-content">
-                            <h4>Johnny William</h4>
-                            <span>CO-Founder</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                            <h4>Duwi Purnama Sidik</h4>
+                            <span>Back-End Developer & Founder</span>
+                            <p>195150219111001</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-member">
                         <div class="thumb-container">
-                            <img src="assets/images/team_02.jpg" alt="">
+                            <img src="assets/images/members/Iwang.jpg" alt="">
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                        <li><a href="https://www.facebook.com/iwang.pratama.92"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/pengennps5"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/iwang-pratama-370669207/"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.instagram.com/pratamaiwang/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="down-content">
-                            <h4>Karry Pitcher</h4>
-                            <span>Product Expert</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                            <h4>Iwang Aryasatya Pratama</h4>
+                            <span>Front-End Developer</span>
+                            <p>195150200111006</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-member">
                         <div class="thumb-container">
-                            <img src="assets/images/team_03.jpg" alt="">
+                            <img src="assets/images/members/Toby.png" alt="">
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/toby.fuady"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/toby_fuady"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                        <li><a href="https://www.instagram.com/toby.fuady/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="down-content">
-                            <h4>Michael Soft</h4>
-                            <span>Chief Marketing</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                            <h4>Muhammad Ishtobir Fuady</h4>
+                            <span>Back-End Developer</span>
+                            <p>195150200111011</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-member">
                         <div class="thumb-container">
-                            <img src="assets/images/team_04.jpg" alt="">
+                            <img src="assets/images/members/Irza.jpg" alt="">
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                        <li><a href="https://www.facebook.com/IrzaPradana05"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/Irzactlyours"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/andikairzapradana/"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.instagram.com/irzapradana/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="down-content">
-                            <h4>Mary Cool</h4>
-                            <span>Product Specialist</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                            <h4>Andika Irza Pradana</h4>
+                            <span>Front-End Developer</span>
+                            <p>195150201111009</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-member">
                         <div class="thumb-container">
-                            <img src="assets/images/team_05.jpg" alt="">
+                            <img src="assets/images/members/Elsa.jpeg" alt="">
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/xiuxiulsa"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/elsaagrianic"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                        <li><a href="https://www.instagram.com/elsaagrianic/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="down-content">
-                            <h4>George Walker</h4>
-                            <span>Product Photographer</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                            <h4>Elsa Chintia Agriani</h4>
+                            <span>Designer</span>
+                            <p>195150207111008</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-member">
                         <div class="thumb-container">
-                            <img src="assets/images/team_06.jpg" alt="">
+                            <img src="assets/images/members/Alien.png" alt="">
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                        <li><a href="https://www.instagram.com/cariad_chi/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="down-content">
-                            <h4>Kate Town</h4>
-                            <span>General Manager</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                            <h4>Alien Via Surya Budi</h4>
+                            <span>Designer</span>
+                            <p>195150201111008</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-item">
-                        <div class="icon">
-                            <i class="fa fa-gear"></i>
-                        </div>
-                        <div class="down-content">
-                            <h4>Product Management</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat.</p>
-                            <a href="#" class="filled-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-item">
-                        <div class="icon">
-                            <i class="fa fa-gear"></i>
-                        </div>
-                        <div class="down-content">
-                            <h4>Customer Relations</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat.</p>
-                            <a href="#" class="filled-button">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-item">
-                        <div class="icon">
-                            <i class="fa fa-gear"></i>
-                        </div>
-                        <div class="down-content">
-                            <h4>Global Collection</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat.</p>
-                            <a href="#" class="filled-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <div class="happy-clients">
         <div class="container">
@@ -247,33 +199,38 @@
                 <div class="col-md-12">
                     <div class="owl-clients owl-carousel">
                         <div class="client-item">
-                            <img src="assets/images/client-01.png" alt="1">
+                            <img src="{{url('assets/images/partners/Github.png')}}" alt="1">
                         </div>
 
                         <div class="client-item">
-                            <img src="assets/images/client-01.png" alt="2">
+                            <img src="{{url('assets/images/partners/Laravel.png')}}" alt="2">
                         </div>
 
                         <div class="client-item">
-                            <img src="assets/images/client-01.png" alt="3">
+                            <img src="{{url('assets/images/partners/Bootstrap.png')}}" alt="3">
                         </div>
 
                         <div class="client-item">
-                            <img src="assets/images/client-01.png" alt="4">
+                            <img src="{{url('assets/images/partners/PHP.png')}}" alt="4">
                         </div>
 
                         <div class="client-item">
-                            <img src="assets/images/client-01.png" alt="5">
+                            <img src="{{url('assets/images/partners/HTML5.jpg')}}" alt="5">
                         </div>
 
                         <div class="client-item">
-                            <img src="assets/images/client-01.png" alt="6">
+                            <img src="{{url('assets/images/partners/CSS.jpg')}}" alt="6">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 
 </html>
