@@ -144,9 +144,9 @@ class CRUD extends Controller
     public function showDetail($id)
     {
         $data = DB::table('users')
-        ->join('barangs','users.id','barangs.user_id')
+        ->join('barangs','users.id','=','barangs.user_id')
         ->select('users.name', 'users.noHP', 'users.email')
-        ->groupBy('users.name', 'users.noHP', 'users.email')
+        ->where('barangs.id','=', $id)
         ->first();
         $detail = [
             'produk' => $this->barang->detailP($id),
