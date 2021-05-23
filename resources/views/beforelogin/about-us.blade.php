@@ -6,8 +6,14 @@
     <div class="page-heading about-heading header-text">
         <div class="container">
             <div class="row">
+                <div class="col-md-6">
+                    <div class="image">
+                        <img src="assets/images/.jpg" alt="">
+                    </div>
+                </div>
                 <div class="col-md-12">
                     <div class="text-content">
+                        <img src="assets/images/.jpg" alt="">
                         <h4>About Us</h4>
                         <h2 class="company-name">Tuku Gadget</h2>
                     </div>
@@ -27,7 +33,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="right-image">
+                    <div class="image">
                         <img src="assets/images/LogoTukuGadget.png" alt="">
                     </div>
                 </div>
@@ -62,7 +68,6 @@
                                     <ul class="social-icons">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="https://www.instagram.com/dunasi_/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
@@ -84,7 +89,6 @@
                                     <ul class="social-icons">
                                         <li><a href="https://www.facebook.com/iwang.pratama.92"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="https://twitter.com/pengennps5"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/iwang-pratama-370669207/"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="https://www.instagram.com/pratamaiwang/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
@@ -106,7 +110,6 @@
                                     <ul class="social-icons">
                                         <li><a href="https://www.facebook.com/toby.fuady"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="https://twitter.com/toby_fuady"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="https://www.instagram.com/toby.fuady/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
@@ -128,7 +131,6 @@
                                     <ul class="social-icons">
                                         <li><a href="https://www.facebook.com/IrzaPradana05"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="https://twitter.com/Irzactlyours"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/andikairzapradana/"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="https://www.instagram.com/irzapradana/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
@@ -150,7 +152,6 @@
                                     <ul class="social-icons">
                                         <li><a href="https://www.facebook.com/xiuxiulsa"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="https://twitter.com/elsaagrianic"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="https://www.instagram.com/elsaagrianic/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
@@ -172,7 +173,6 @@
                                     <ul class="social-icons">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="https://www.instagram.com/cariad_chi/"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
@@ -231,7 +231,6 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 
 </html>
