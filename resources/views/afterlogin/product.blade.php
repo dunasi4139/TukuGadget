@@ -29,6 +29,15 @@
                 </div>
 
                 @if(isset ($dataCari))
+                <?php
+                $jumlah = 0
+                ?>
+                @foreach ($dataCari as $item)
+                <?php
+                $jumlah+=1
+                ?>
+                @endforeach
+                @if($jumlah > 0) 
                 @foreach ($dataCari as $item)
                 <div class="col-md-4">
                     <div class="product-item">
@@ -44,7 +53,13 @@
                 </div>
                 {{ $dataCari->links() }}
                 @endforeach
-
+                @else
+                
+                <div class="col-md-4">
+                    <h5>Product not found</h5>
+                </div>
+                
+                @endif
                 @else
                 @foreach ($produk as $item)
                 <div class="col-md-4">
