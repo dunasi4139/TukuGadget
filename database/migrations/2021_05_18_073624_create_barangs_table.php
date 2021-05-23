@@ -19,7 +19,7 @@ class CreateBarangsTable extends Migration
             $table->string('jenis');
             $table->string('harga');
             $table->string('alamat');
-            $table->string('deskripsi');
+            $table->string('deskripsi',5000);
             $table->string('gambar');
             $table->string('penjual');
             $table->integer('user_id');
