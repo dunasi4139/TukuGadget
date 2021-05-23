@@ -32,9 +32,9 @@
                 @foreach ($dataCari as $item)
                 <div class="col-md-4">
                     <div class="product-item">
-                        <a href="{{ route('detail') }}"><img src="{{ url ('assets/images/barang/'.$item->gambar)}}" alt=""></a>
+                        <a href="{{ route('detail' , ['id'=>$item->id]) }}"><img src="{{ url ('assets/images/barang/'.$item->gambar)}}" alt=""></a>
                         <div class="down-content">
-                            <a href="{{ route('detail') }}">
+                            <a href="{{ route('detail' , ['id'=>$item->id]) }}">
                                 <h4>{{ $item->nama }}</h4>
                             </a>
                             <strong>Rp. {{ number_format($item->harga) }}</strong>
@@ -48,9 +48,9 @@
                 @foreach ($produk as $item)
                 <div class="col-md-4">
                     <div class="product-item">
-                        <a href="{{ route('detail') }}"><img src="{{ url ('assets/images/barang/'.$item->gambar)}}" alt=""></a>
+                        <a href="{{ route('detail' , ['id'=>$item->id]) }}"><img src="{{ url ('assets/images/barang/'.$item->gambar)}}" alt=""></a>
                         <div class="down-content">
-                            <a href="{{ route('detail') }}">
+                            <a href="{{ route('detail' , ['id'=>$item->id]) }}">
                                 <h4>{{ $item->nama }}</h4>
                             </a>
                             <strong>Rp. {{ number_format($item->harga) }}</strong>
