@@ -3,9 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
+use App\Models\barang;
 
 class ViewController extends Controller
-{
+{  
+    public $id;
+    public function barang_id($id){
+        $this->id = $id;
+    }
     public function indexAbout()
     {
         if (Auth::check()) {
@@ -16,6 +21,7 @@ class ViewController extends Controller
     }
     public function indexJualBarang()
     {
+        
         if (Auth::check()) {
             return view('afterlogin.jual-barang');
         } else {
@@ -23,14 +29,4 @@ class ViewController extends Controller
         }
     }
 
-
-
-    public function showDetail()
-    {
-        if (Auth::check()) {
-            return view('afterlogin.detail');
-        } else {
-            return view('beforelogin.detail');
-        }
-    }
 }

@@ -41,4 +41,4 @@ Route::get('search', [CRUD::class, 'search'])->name('search');
 
 Route::get('product', [CRUD::class, 'product'])->name('product');
 
-Route::get('productDetail', [ViewController::class, 'showDetail'])->name('detail');
+Route::get('productDetail/{id}', [CRUD::class, 'showDetail'])->name('detail');

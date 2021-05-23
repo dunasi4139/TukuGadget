@@ -166,7 +166,7 @@
                 <div class="col-md-4">
                     <div class="team-member">
                         <div class="thumb-container">
-                            <img src="assets/images/members/Alien.png" alt="">
+                            <img src="assets/images/members/Alien.jpeg" alt="">
                             <div class="hover-effect">
                                 <div class="hover-content">
                                     <ul class="social-icons">

@@ -19,15 +19,19 @@ class barang extends Model
         'alamat',
         'deskripsi',
         'gambar',
-        'penjual'
+        'penjual',
+        'user_id'
     ];
     public function allData(){
-        return DB::table('barangs')->get();
+        return barang::simplePaginate(6);
     }
     public function latestProduct(){
         return barang::orderBy('created_at','DESC')->get()->take(6);
     }
     public function daftarJual(){
         return DB::table('barangs')->where('penjual', Auth::user()->username)->get();
+    }
+    public function detailP($id){
+        return DB::table('barangs')->where('id', $id)->first();
     }
 }
