@@ -10,7 +10,8 @@
     transition: all 0.5s;
 }
 
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
     box-shadow: 0 0 0 0.2rem rgb(33 37 41 / 25%);
 }
 
@@ -20,14 +21,15 @@
 }
 
 @media (max-width: 992px) {
-    .dropdown .btn{
+    .dropdown .btn {
         padding: 15px 0px;
-		color: #1e1e1e!important;
+        color: #1e1e1e !important;
         width: 100%;
         text-align: center;
     }
 
-    .btn.focus, .btn:focus {
+    .btn.focus,
+    .btn:focus {
         box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 25%);
     }
 

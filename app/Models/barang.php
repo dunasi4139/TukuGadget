@@ -13,7 +13,7 @@ class barang extends Model
     protected $table = "barangs";
     protected $primaryKey = "id";
     protected $fillable = [
-        'nama' ,
+        'nama',
         'jenis',
         'harga',
         'alamat',
@@ -22,16 +22,20 @@ class barang extends Model
         'penjual',
         'user_id'
     ];
-    public function allData(){
+    public function allData()
+    {
         return barang::simplePaginate(6);
     }
-    public function latestProduct(){
-        return barang::orderBy('created_at','DESC')->get()->take(6);
+    public function latestProduct()
+    {
+        return barang::orderBy('created_at', 'DESC')->get()->take(6);
     }
-    public function daftarJual(){
+    public function daftarJual()
+    {
         return DB::table('barangs')->where('penjual', Auth::user()->username)->get();
     }
-    public function detailP($id){
+    public function detailP($id)
+    {
         return DB::table('barangs')->where('id', $id)->first();
     }
 }

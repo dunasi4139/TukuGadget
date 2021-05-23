@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use App\Models\barang;
-use App\Models\User;
 
 class CRUD extends Controller
 {
@@ -80,9 +79,9 @@ class CRUD extends Controller
             'deskripsi' => $request->deskripsibarang,
             'gambar' => $filenameSimpan,
             'penjual' => $user->username,
-            'user_id' =>$user->id,
+            'user_id' => $user->id,
         ]);
-        $nambah = $user->jumlah +1;
+        $nambah = $user->jumlah + 1;
         $user->jumlah = $nambah;
         $user->save();
         $file->move(public_path() . '/assets/images/barang', $filenameSimpan);
@@ -117,16 +116,16 @@ class CRUD extends Controller
         $request->validate([
             'foto' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
         ], [
-            'foto.required'=>redirect('/profile')
+            'foto.required' => redirect('/profile')
         ]);
         $user = Auth::user();
         $foto = Auth::user()->foto;
         if ($foto) {
-            $reqfile = 'assets/images/user/'.$foto;
+            $reqfile = 'assets/images/user/' . $foto;
             if (Storage::url($reqfile)) {
                 File::delete($reqfile);
             }
-            
+
             $file = $request->file('foto');
             $filenameWithExt = $file->getClientOriginalName();
             $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
@@ -138,16 +137,16 @@ class CRUD extends Controller
             return redirect('/profile');
         }
     }
-    
+
 
 
     public function showDetail($id)
     {
         $data = DB::table('users')
-        ->join('barangs','users.id','=','barangs.user_id')
-        ->select('users.name', 'users.noHP', 'users.email')
-        ->where('barangs.id','=', $id)
-        ->first();
+            ->join('barangs', 'users.id', '=', 'barangs.user_id')
+            ->select('users.name', 'users.noHP', 'users.email')
+            ->where('barangs.id', '=', $id)
+            ->first();
         $detail = [
             'produk' => $this->barang->detailP($id),
         ];
@@ -155,9 +154,9 @@ class CRUD extends Controller
             'user' => $data,
         ];
         if (Auth::check()) {
-            return view('afterlogin.detail',['produk' => $detail], ['user' => $orang]);
+            return view('afterlogin.detail', ['produk' => $detail], ['user' => $orang]);
         } else {
-            return view('beforelogin.detail',['produk' => $detail], ['user' => $orang]);
+            return view('beforelogin.detail', ['produk' => $detail], ['user' => $orang]);
         }
     }
 }

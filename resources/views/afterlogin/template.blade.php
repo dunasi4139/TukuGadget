@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="assets/images/IconTukuGadget.ico">
 
     <title>@yield('title')</title>
@@ -50,7 +51,8 @@
                 <a class="navbar-brand" href="/">
                     <h2>Tuku <em>Gadget</em></h2>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -60,7 +62,8 @@
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="{{ Request::path() == 'product' || Request::path() == 'search' || Request::path() == 'productDetail/{id}'  ? 'nav-item active' : 'nav-item' }}">
+                        <li
+                            class="{{ Request::path() == 'product' || Request::path() == 'search' || Request::path() == 'productDetail/{id}' ? 'nav-item active' : 'nav-item' }}">
                             <a class="nav-link" href="/product">Product</a>
                         </li>
                         <li class="{{ Request::path() == 'jualBarang' ? 'nav-item active' : 'nav-item' }}">
@@ -71,7 +74,9 @@
                         </li>
                         <li class="nav-item">
                             <div class="dropdown {{ Request::path() == 'profile' ? 'nav-item active' : 'nav-item' }}">
-                                <button class="btn btn--secondary dropdowntoggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn btn--secondary dropdowntoggle nav-link" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
                                     Account
                                     <i class="fa fa-caret-down"></i>
                                 </button>
@@ -124,6 +129,7 @@
                 t.style.color = '#fff';
             }
         }
+
     </script>
 
 
