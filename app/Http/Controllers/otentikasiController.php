@@ -62,6 +62,7 @@ class otentikasiController extends Controller
                 'email' => $request->email,
                 'username' => $request->username,
                 'noHP' => $request->noHP,
+                'foto' => '',
                 'jumlah' => 0,
                 'password' => bcrypt($request->password),
             ]);
