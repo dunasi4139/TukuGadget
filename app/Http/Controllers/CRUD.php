@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use App\Models\barang;
 
+
 class CRUD extends Controller
 {
 
@@ -125,7 +126,7 @@ class CRUD extends Controller
             if (Storage::url($reqfile)) {
                 File::delete($reqfile);
             }
-
+        }
             $file = $request->file('foto');
             $filenameWithExt = $file->getClientOriginalName();
             $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
@@ -135,7 +136,7 @@ class CRUD extends Controller
             $user->foto = $filenameSimpan;
             $user->save();
             return redirect('/profile');
-        }
+        
     }
 
 
