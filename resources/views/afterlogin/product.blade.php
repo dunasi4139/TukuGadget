@@ -38,7 +38,7 @@
                                 <h4>{{ $item->nama }}</h4>
                             </a>
                             <strong>Rp. {{ number_format($item->harga) }}</strong>
-                            <p>{{ $item->deskripsi }}</p>
+                            <p>{{ Str::limit($item->deskripsi, 100) }}</p>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                             </a>
                             <br>
                             <strong>Rp. {{ number_format($item->harga) }}</strong>
-                            <p>{{ $item->deskripsi }}</p>
+                            <p>{{ Str::limit($item->deskripsi, 100) }}</p>
                         </div>
                     </div>
                 </div>
