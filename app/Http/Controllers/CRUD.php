@@ -145,8 +145,8 @@ class CRUD extends Controller
     {
         $data = DB::table('users')
         ->join('barangs','users.id','barangs.user_id')
-        ->select('users.name', 'users.noHP')
-        ->groupBy('users.name', 'users.noHP')
+        ->select('users.name', 'users.noHP', 'users.email')
+        ->groupBy('users.name', 'users.noHP', 'users.email')
         ->first();
         $detail = [
             'produk' => $this->barang->detailP($id),
@@ -155,7 +155,7 @@ class CRUD extends Controller
             'user' => $data,
         ];
         if (Auth::check()) {
-            return view('afterlogin.detail',['produk' => $detail]);
+            return view('afterlogin.detail',['produk' => $detail], ['user' => $orang]);
         } else {
             return view('beforelogin.detail',['produk' => $detail], ['user' => $orang]);
         }
