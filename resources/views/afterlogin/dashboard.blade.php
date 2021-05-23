@@ -47,7 +47,7 @@
                         <a href="{{ route('detail' , ['id'=>$item->id]) }}"><img src="{{ url ('assets/images/barang/'.$item->gambar)}}" alt=""></a>
                         <div class="down-content">
                             <a href="{{ route('detail' , ['id'=>$item->id]) }}">
-                                <h4>{{ $item->nama }}</h4>
+                                <h4>{{ Str::limit($item->nama, 20) }}</h4>
                             </a>
                             <strong>Rp. {{ number_format($item->harga) }}</strong>
                             <p>{{ Str::limit($item->deskripsi, 100) }}</p>

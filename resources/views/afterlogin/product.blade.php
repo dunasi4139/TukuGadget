@@ -44,14 +44,13 @@
                         <a href="{{ route('detail' , ['id'=>$item->id]) }}"><img src="{{ url ('assets/images/barang/'.$item->gambar)}}" alt=""></a>
                         <div class="down-content">
                             <a href="{{ route('detail' , ['id'=>$item->id]) }}">
-                                <h4>{{ $item->nama }}</h4>
+                                <h4>{{ Str::limit($item->nama, 20) }}</h4>
                             </a>
                             <strong>Rp. {{ number_format($item->harga) }}</strong>
                             <p>{{ Str::limit($item->deskripsi, 100) }}</p>
                         </div>
                     </div>
                 </div>
-                {{ $dataCari->links() }}
                 @endforeach
                 @else
                 
@@ -67,7 +66,7 @@
                         <a href="{{ route('detail' , ['id'=>$item->id]) }}"><img src="{{ url ('assets/images/barang/'.$item->gambar)}}" alt=""></a>
                         <div class="down-content">
                             <a href="{{ route('detail' , ['id'=>$item->id]) }}">
-                                <h4>{{ $item->nama }}</h4>
+                                <h4>{{ Str::limit($item->nama, 20) }}</h4>
                             </a>
                             <br>
                             <strong>Rp. {{ number_format($item->harga) }}</strong>
@@ -76,28 +75,18 @@
                     </div>
                 </div>
                 @endforeach
-                
-
                 @endif
             </div>
-            
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    @if(isset ($dataCari))
-                  <li>{{ $dataCari->links() }}</li>
-                  @else 
-                  <li>{{ $produk->links() }}</li>
-                  @endif
-                </ul>
-              </nav>
+            @if (isset ($produk))
+            {{ $produk->links() }}
+            @endif
         </div>
     </div>
+    
 
             @if (session('message'))
                 <div class="alert alert-danger" role="alert" style="padding: 5px; font-size: 400px;">
                     {{ session('message') }}
                 </div>
             @endif
-                
-
 @endsection

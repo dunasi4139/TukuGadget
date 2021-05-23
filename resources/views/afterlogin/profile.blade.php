@@ -96,24 +96,27 @@
                                     </div>
                                     <hr />
                                 </div>
-                                @if(isset ($produk))
-                                @foreach ($produk as $item)
+                                
                                 <div class="tab-pane fade" id="connectedServices" role="tabpanel" aria-labelledby="ConnectedServices-tab">
+                                <div class="row">
+                                @if(isset ($produk))
+                                @foreach ($produk as $item)    
                                     <div class="col-md-4">
                                         <div class="product-item">
                                             <a href="{{ route('detail' , ['id'=>$item->id]) }}"><img src="{{ url ('assets/images/barang/'.$item->gambar)}}" alt=""></a>
                                             <div class="down-content">
                                                 <a href="{{ route('detail' , ['id'=>$item->id]) }}">
-                                                    <h4>{{ $item->nama }}</h4>
+                                                    <h4>{{ Str::limit($item->nama, 20) }}</h4>
                                                 </a>
-                                                <h6>Rp. {{ number_format($item->harga) }}</h6>
-                                                <p>{{ $item->deskripsi }}</p>
+                                                <strong>Rp. {{ number_format($item->harga) }}</strong>
+                                                <p>{{ Str::limit($item->deskripsi, 100) }}</p>
                                             </div>
                                         </div>
                                     </div>
+                                    @endforeach
+                                    @endif
+                                    </div>
                                 </div>
-                                @endforeach
-                                @endif
                             </div>
                         </div>
                     </div>

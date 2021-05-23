@@ -29,21 +29,36 @@
                 </div>
 
                 @if(isset ($dataCari))
+                <?php
+                $jumlah = 0
+                ?>
+                @foreach ($dataCari as $item)
+                <?php
+                $jumlah+=1
+                ?>
+                @endforeach
+                @if($jumlah > 0) 
                 @foreach ($dataCari as $item)
                 <div class="col-md-4">
                     <div class="product-item">
                         <a href="{{ route('detail' , ['id'=>$item->id]) }}"><img src="{{ url ('assets/images/barang/'.$item->gambar)}}" alt=""></a>
                         <div class="down-content">
                             <a href="{{ route('detail' , ['id'=>$item->id]) }}">
-                                <h4>{{ $item->nama }}</h4>
+                                <h4>{{ Str::limit($item->nama, 20) }}</h4>
                             </a>
                             <strong>Rp. {{ number_format($item->harga) }}</strong>
-                            <p>{{ $item->deskripsi }}</p>
+                            <p>{{ Str::limit($item->deskripsi, 100) }}</p>
                         </div>
                     </div>
                 </div>
                 @endforeach
-
+                @else
+                
+                <div class="col-md-4">
+                    <h5>Product not found</h5>
+                </div>
+                
+                @endif
                 @else
                 @foreach ($produk as $item)
                 <div class="col-md-4">
@@ -51,16 +66,20 @@
                         <a href="{{ route('detail' , ['id'=>$item->id]) }}"><img src="{{ url ('assets/images/barang/'.$item->gambar)}}" alt=""></a>
                         <div class="down-content">
                             <a href="{{ route('detail' , ['id'=>$item->id]) }}">
-                                <h4>{{ $item->nama }}</h4>
+                                <h4>{{ Str::limit($item->nama, 20) }}</h4>
                             </a>
+                            <br>
                             <strong>Rp. {{ number_format($item->harga) }}</strong>
-                            <p>{{ $item->deskripsi }}</p>
+                            <p>{{ Str::limit($item->deskripsi, 100) }}</p>
                         </div>
                     </div>
                 </div>
                 @endforeach
-    @endif
+                @endif
             </div>
+            @if (isset ($produk))
+            {{ $produk->links() }}
+            @endif
         </div>
     </div>
 
