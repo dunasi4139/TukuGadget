@@ -6,6 +6,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link href="{{ asset('assets/css/profilestyle.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{ asset('assets/images/IconTukuGadget.ico') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/templatemo-sixteen.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/dropdown.css') }}">
